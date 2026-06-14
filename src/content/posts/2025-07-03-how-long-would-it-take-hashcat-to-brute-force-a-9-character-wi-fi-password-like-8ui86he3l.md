@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/07/banklockillphated2.jpg"
+featured_image: "/media/2025/07/banklockillphated2.jpg"
 featured_image_relative: "2025/07/banklockillphated2.jpg"
 ---
 

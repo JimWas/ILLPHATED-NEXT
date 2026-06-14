@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-16-14.04.20-A-cyberpunk-inspired-depiction-of-a-broken-halo-that-once-shone-brightly-set-in-a-Blade-Runner-universe-with-vaporwave-aesthetics.-The-halo-appears-c.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-16-14.04.20-A-cyberpunk-inspired-depiction-of-a-broken-halo-that-once-shone-brightly-set-in-a-Blade-Runner-universe-with-vaporwave-aesthetics.-The-halo-appears-c.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-16-14.04.20-A-cyberpunk-inspired-depiction-of-a-broken-halo-that-once-shone-brightly-set-in-a-Blade-Runner-universe-with-vaporwave-aesthetics.-The-halo-appears-c.webp"
 ---
 

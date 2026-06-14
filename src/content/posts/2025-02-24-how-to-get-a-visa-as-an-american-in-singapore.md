@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-24-15.34.10-A-futuristic-immigration-office-in-a-Blade-Runner-inspired-Singapore-illuminated-with-neon-vaporwave-colors.-The-scene-is-set-in-a-high-tech-cityscap.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-24-15.34.10-A-futuristic-immigration-office-in-a-Blade-Runner-inspired-Singapore-illuminated-with-neon-vaporwave-colors.-The-scene-is-set-in-a-high-tech-cityscap.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-24-15.34.10-A-futuristic-immigration-office-in-a-Blade-Runner-inspired-Singapore-illuminated-with-neon-vaporwave-colors.-The-scene-is-set-in-a-high-tech-cityscap.webp"
 ---
 

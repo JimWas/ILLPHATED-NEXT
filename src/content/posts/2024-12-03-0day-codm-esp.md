@@ -11,4 +11,4 @@ categories:
 tags: []
 ---
 
-[![Image](../media/2024/12/ScreenShot.000208.ChatGPT2024-12-02.@2x-300x288.jpg)](/122-0day-esp-promo)
+[![Image](/media/2024/12/ScreenShot.000208.ChatGPT2024-12-02.@2x-300x288.jpg)](/122-0day-esp-promo)

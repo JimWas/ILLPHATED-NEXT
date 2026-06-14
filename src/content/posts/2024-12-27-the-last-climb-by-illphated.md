@@ -37,6 +37,6 @@ For the first time in decades, Nova Avalon felt alive. And at the heart of it, a
 
 [caption id="attachment_113" align="alignnone" width="300"]
 
-![The-Last-Climb-Illphated.jpg](../media/2024/12/The-Last-Climb-Illphated-300x171.jpg)
+![The-Last-Climb-Illphated.jpg](/media/2024/12/The-Last-Climb-Illphated-300x171.jpg)
 
  The-Last-Climb-Illphated.jpg[/caption]

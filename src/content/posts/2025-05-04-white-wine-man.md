@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/05/JAMES-WASHKAU-NASA.png"
+featured_image: "/media/2025/05/JAMES-WASHKAU-NASA.png"
 featured_image_relative: "2025/05/JAMES-WASHKAU-NASA-1fzVlaTIYr6H.png"
 ---
 

@@ -9,8 +9,8 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/Screenshot-2025-01-27-at-8.26.21\u202fAM.jpg"
+featured_image: "/media/2025/01/Screenshot-2025-01-27-at-8.26.21\u202fAM.jpg"
 featured_image_relative: "2025/01/Screenshot-2025-01-27-at-8.26.21\u202fAM.jpg"
 ---
 
-[![Image](../media/2025/01/Screenshot-2025-01-27-at-8.26.21 AM-248x300.jpg)](https://illphated.com/mee/illphated/screenshot-2025-01-27-at-8-26-21-am-png/)
+[![Image](/media/2025/01/Screenshot-2025-01-27-at-8.26.21 AM-248x300.jpg)](https://illphated.com/mee/illphated/screenshot-2025-01-27-at-8-26-21-am-png/)

@@ -13,4 +13,4 @@ tags: []
 
 OMG FFS
 
-![Image](../media/2024/12/ScreenShot.000194.CleanShot2024-12-02.@2x-300x166.jpg)
+![Image](/media/2024/12/ScreenShot.000194.CleanShot2024-12-02.@2x-300x166.jpg)

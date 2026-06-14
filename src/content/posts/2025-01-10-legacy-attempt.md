@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-10-17.33.43-A-Blade-Runner-inspired-futuristic-cityscape-in-vaporwave-colors-featuring-a-high-tech-vault-with-holographic-projections-of-folders-labeled-Memorie.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-10-17.33.43-A-Blade-Runner-inspired-futuristic-cityscape-in-vaporwave-colors-featuring-a-high-tech-vault-with-holographic-projections-of-folders-labeled-Memorie.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-10-17.33.43-A-Blade-Runner-inspired-futuristic-cityscape-in-vaporwave-colors-featuring-a-high-tech-vault-with-holographic-projections-of-folders-labeled-Memorie.webp"
 ---
 

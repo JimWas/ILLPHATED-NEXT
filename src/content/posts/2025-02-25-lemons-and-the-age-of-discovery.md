@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-25-07.41.35-A-futuristic-pineapple-wearing-a-sleek-black-tuxedo-set-in-a-cyberpunk-Blade-Runner-inspired-universe.-The-cityscape-is-filled-with-neon-signs-holog.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-25-07.41.35-A-futuristic-pineapple-wearing-a-sleek-black-tuxedo-set-in-a-cyberpunk-Blade-Runner-inspired-universe.-The-cityscape-is-filled-with-neon-signs-holog.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-25-07.41.35-A-futuristic-pineapple-wearing-a-sleek-black-tuxedo-set-in-a-cyberpunk-Blade-Runner-inspired-universe.-The-cityscape-is-filled-with-neon-signs-holog.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-23-09.14.32-A-cyberpunk-themed-futuristic-workstation-displaying-a-MacBook-running-Path-of-Exile-2.-The-screen-shows-a-white-glitched-out-display-due-to-DirectX-.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-23-09.14.32-A-cyberpunk-themed-futuristic-workstation-displaying-a-MacBook-running-Path-of-Exile-2.-The-screen-shows-a-white-glitched-out-display-due-to-DirectX-.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-23-09.14.32-A-cyberpunk-themed-futuristic-workstation-displaying-a-MacBook-running-Path-of-Exile-2.-The-screen-shows-a-white-glitched-out-display-due-to-DirectX-.webp"
 ---
 

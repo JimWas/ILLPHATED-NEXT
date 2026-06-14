@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-13-08.14.42-A-space-cowboy-with-red-hair-and-a-red-beard-stands-next-to-his-beautiful-Asian-space-cowgirl-wife.-She-wears-a-white-cowboy-hat-and-they-are-holding.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-13-08.14.42-A-space-cowboy-with-red-hair-and-a-red-beard-stands-next-to-his-beautiful-Asian-space-cowgirl-wife.-She-wears-a-white-cowboy-hat-and-they-are-holding.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-13-08.14.42-A-space-cowboy-with-red-hair-and-a-red-beard-stands-next-to-his-beautiful-Asian-space-cowgirl-wife.-She-wears-a-white-cowboy-hat-and-they-are-holding.webp"
 ---
 

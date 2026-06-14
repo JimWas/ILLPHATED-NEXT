@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/07/DALL\u00b7E-2025-07-23-18.31.13-An-abstract-textured-portrait-of-a-mysterious-southern-cowgirl-with-striking-green-eyes-and-untamed-wavy-blonde-hair-blowing-slightly-in-the-wind.-Sh.webp"
+featured_image: "/media/2025/07/DALL\u00b7E-2025-07-23-18.31.13-An-abstract-textured-portrait-of-a-mysterious-southern-cowgirl-with-striking-green-eyes-and-untamed-wavy-blonde-hair-blowing-slightly-in-the-wind.-Sh.webp"
 featured_image_relative: "2025/07/DALL\u00b7E-2025-07-23-18.31.13-An-abstract-textured-portrait-of-a-mysterious-southern-cowgirl-with-striking-green-eyes-and-untamed-wavy-blonde-hair-blowing-slightly-in-the-wind.-Sh.webp"
 ---
 

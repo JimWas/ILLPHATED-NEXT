@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-12-09.04.15-A-futuristic-hard-drive-on-the-surface-of-Mars-set-in-a-Blade-Runner-inspired-universe.-The-scene-is-bathed-in-neon-vaporwave-colors\u2014purple-pink-an.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-12-09.04.15-A-futuristic-hard-drive-on-the-surface-of-Mars-set-in-a-Blade-Runner-inspired-universe.-The-scene-is-bathed-in-neon-vaporwave-colors\u2014purple-pink-an.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-12-09.04.15-A-futuristic-hard-drive-on-the-surface-of-Mars-set-in-a-Blade-Runner-inspired-universe.-The-scene-is-bathed-in-neon-vaporwave-colors\u2014purple-pink-an.webp"
 ---
 

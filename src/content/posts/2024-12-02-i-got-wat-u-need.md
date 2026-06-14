@@ -11,4 +11,4 @@ categories:
 tags: []
 ---
 
-![Image](../media/2024/12/6699448AB-21__13416-300x300.jpg)
+![Image](/media/2024/12/6699448AB-21__13416-300x300.jpg)

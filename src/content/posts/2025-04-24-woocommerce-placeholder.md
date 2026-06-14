@@ -11,6 +11,6 @@ categories:
 tags: []
 ---
 
-![Image](../media/woocommerce-placeholder.png)
+![Image](/media/woocommerce-placeholder.png)
 
 woocommerce-placeholder

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-30-11.03.07-A-cyberpunk-cityscape-in-a-Blade-Runner-inspired-world-drenched-in-vaporwave-colors\u2014neon-pinks-purples-and-blues.-A-charismatic-world-leader-stands.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-30-11.03.07-A-cyberpunk-cityscape-in-a-Blade-Runner-inspired-world-drenched-in-vaporwave-colors\u2014neon-pinks-purples-and-blues.-A-charismatic-world-leader-stands.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-30-11.03.07-A-cyberpunk-cityscape-in-a-Blade-Runner-inspired-world-drenched-in-vaporwave-colors\u2014neon-pinks-purples-and-blues.-A-charismatic-world-leader-stands.webp"
 ---
 

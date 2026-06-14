@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-21-16.52.52-A-Blade-Runner-steampunk-inspired-depiction-of-Illphated-George-Washington-leading-a-futuristic-spacecraft-shaped-like-a-longboat-across-a-glowing-riv.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-21-16.52.52-A-Blade-Runner-steampunk-inspired-depiction-of-Illphated-George-Washington-leading-a-futuristic-spacecraft-shaped-like-a-longboat-across-a-glowing-riv.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-21-16.52.52-A-Blade-Runner-steampunk-inspired-depiction-of-Illphated-George-Washington-leading-a-futuristic-spacecraft-shaped-like-a-longboat-across-a-glowing-riv.webp"
 ---
 

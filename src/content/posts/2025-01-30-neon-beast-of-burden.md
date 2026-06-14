@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-29-18.17.02-A-cyberpunk-donkey-carrying-a-futuristic-cellphone-tower-on-its-back-set-in-a-Blade-Runner-inspired-neon-lit-cityscape.-The-scene-is-drenched-in-vapo.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-29-18.17.02-A-cyberpunk-donkey-carrying-a-futuristic-cellphone-tower-on-its-back-set-in-a-Blade-Runner-inspired-neon-lit-cityscape.-The-scene-is-drenched-in-vapo.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-29-18.17.02-A-cyberpunk-donkey-carrying-a-futuristic-cellphone-tower-on-its-back-set-in-a-Blade-Runner-inspired-neon-lit-cityscape.-The-scene-is-drenched-in-vapo.webp"
 ---
 

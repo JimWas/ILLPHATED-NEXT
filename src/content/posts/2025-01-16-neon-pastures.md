@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-16-17.48.39-A-surreal-Blade-Runner-inspired-ranch-scene-blending-a-New-Jersey-ranch-with-vaporwave-aesthetics.-The-horizon-features-a-skyline-with-sleek-futurist.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-16-17.48.39-A-surreal-Blade-Runner-inspired-ranch-scene-blending-a-New-Jersey-ranch-with-vaporwave-aesthetics.-The-horizon-features-a-skyline-with-sleek-futurist.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-16-17.48.39-A-surreal-Blade-Runner-inspired-ranch-scene-blending-a-New-Jersey-ranch-with-vaporwave-aesthetics.-The-horizon-features-a-skyline-with-sleek-futurist.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-16-17.54.53-An-Irish-boy-with-auburn-hair-and-his-blonde-girlfriend-nurturing-a-growing-olive-tree-in-a-futuristic-Blade-Runner-inspired-cityscape.-The-tree-grows.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-16-17.54.53-An-Irish-boy-with-auburn-hair-and-his-blonde-girlfriend-nurturing-a-growing-olive-tree-in-a-futuristic-Blade-Runner-inspired-cityscape.-The-tree-grows.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-16-17.54.53-An-Irish-boy-with-auburn-hair-and-his-blonde-girlfriend-nurturing-a-growing-olive-tree-in-a-futuristic-Blade-Runner-inspired-cityscape.-The-tree-grows.webp"
 ---
 

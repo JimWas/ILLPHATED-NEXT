@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-27-08.20.15-A-Blade-Runner-inspired-space-cowboy-marketer-standing-on-a-neon-lit-rooftop-in-a-futuristic-cityscape.-The-atmosphere-has-vibrant-vaporwave-colors-wi.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-27-08.20.15-A-Blade-Runner-inspired-space-cowboy-marketer-standing-on-a-neon-lit-rooftop-in-a-futuristic-cityscape.-The-atmosphere-has-vibrant-vaporwave-colors-wi.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-27-08.20.15-A-Blade-Runner-inspired-space-cowboy-marketer-standing-on-a-neon-lit-rooftop-in-a-futuristic-cityscape.-The-atmosphere-has-vibrant-vaporwave-colors-wi.webp"
 ---
 

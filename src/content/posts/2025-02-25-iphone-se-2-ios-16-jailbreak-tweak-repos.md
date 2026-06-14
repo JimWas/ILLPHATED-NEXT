@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-24-18.22.35-A-futuristic-iPhone-with-a-sleek-holographic-interface-displaying-lines-of-code.-A-space-cowboy-with-a-red-beard-wearing-a-high-tech-cowboy-hat-and.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-24-18.22.35-A-futuristic-iPhone-with-a-sleek-holographic-interface-displaying-lines-of-code.-A-space-cowboy-with-a-red-beard-wearing-a-high-tech-cowboy-hat-and.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-24-18.22.35-A-futuristic-iPhone-with-a-sleek-holographic-interface-displaying-lines-of-code.-A-space-cowboy-with-a-red-beard-wearing-a-high-tech-cowboy-hat-and.webp"
 ---
 

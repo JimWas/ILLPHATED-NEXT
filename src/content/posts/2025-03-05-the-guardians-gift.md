@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-02-25-08.34.05-A-striking-digital-painting-of-a-wild-mustang-with-a-flowing-mane-its-deep-soulful-eyes-reflecting-an-untamed-spirit.-Above-the-mustang-a-dreamcatc.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-02-25-08.34.05-A-striking-digital-painting-of-a-wild-mustang-with-a-flowing-mane-its-deep-soulful-eyes-reflecting-an-untamed-spirit.-Above-the-mustang-a-dreamcatc.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-02-25-08.34.05-A-striking-digital-painting-of-a-wild-mustang-with-a-flowing-mane-its-deep-soulful-eyes-reflecting-an-untamed-spirit.-Above-the-mustang-a-dreamcatc.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-27-08.35.34-A-Blade-Runner-inspired-cover-photo-for-a-non-profit-called-End-Tinnitus-Now-featuring-a-futuristic-cityscape-with-vibrant-vaporwave-colors-like-pi.jpeg"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-27-08.35.34-A-Blade-Runner-inspired-cover-photo-for-a-non-profit-called-End-Tinnitus-Now-featuring-a-futuristic-cityscape-with-vibrant-vaporwave-colors-like-pi.jpeg"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-27-08.35.34-A-Blade-Runner-inspired-cover-photo-for-a-non-profit-called-End-Tinnitus-Now-featuring-a-futuristic-cityscape-with-vibrant-vaporwave-colors-like-pi.jpeg"
 ---
 

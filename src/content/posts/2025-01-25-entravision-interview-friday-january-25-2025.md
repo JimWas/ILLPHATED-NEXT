@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-25-07.25.12-An-Irish-boy-with-red-hair-and-brown-eyes-and-his-Irish-girlfriend-with-blonde-hair-and-green-eyes-working-together-on-a-futuristic-space-cowboy-ranch.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-25-07.25.12-An-Irish-boy-with-red-hair-and-brown-eyes-and-his-Irish-girlfriend-with-blonde-hair-and-green-eyes-working-together-on-a-futuristic-space-cowboy-ranch.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-25-07.25.12-An-Irish-boy-with-red-hair-and-brown-eyes-and-his-Irish-girlfriend-with-blonde-hair-and-green-eyes-working-together-on-a-futuristic-space-cowboy-ranch.webp"
 ---
 

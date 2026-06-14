@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-25-06.36.40-A-futuristic-space-cowboy-with-red-hair-and-a-red-beard-browsing-his-collection-of-e-juice-flavors-in-a-neon-lit-cyberpunk-city-inspired-by-Blade-Runn.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-25-06.36.40-A-futuristic-space-cowboy-with-red-hair-and-a-red-beard-browsing-his-collection-of-e-juice-flavors-in-a-neon-lit-cyberpunk-city-inspired-by-Blade-Runn.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-25-06.36.40-A-futuristic-space-cowboy-with-red-hair-and-a-red-beard-browsing-his-collection-of-e-juice-flavors-in-a-neon-lit-cyberpunk-city-inspired-by-Blade-Runn.webp"
 ---
 

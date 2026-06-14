@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-14-10.01.57-A-futuristic-cyberpunk-city-in-a-Blade-Runner-inspired-universe-illuminated-with-vibrant-vaporwave-colors-like-neon-pink-purple-and-blue.-The-skyli.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-14-10.01.57-A-futuristic-cyberpunk-city-in-a-Blade-Runner-inspired-universe-illuminated-with-vibrant-vaporwave-colors-like-neon-pink-purple-and-blue.-The-skyli.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-14-10.01.57-A-futuristic-cyberpunk-city-in-a-Blade-Runner-inspired-universe-illuminated-with-vibrant-vaporwave-colors-like-neon-pink-purple-and-blue.-The-skyli.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-25-06.39.26-An-abstract-expressionist-painting-of-a-lone-heron-desperately-seeking-fish-in-a-field-of-bluebonnets.-The-tall-elegant-bird-stands-with-its-long-nec.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-25-06.39.26-An-abstract-expressionist-painting-of-a-lone-heron-desperately-seeking-fish-in-a-field-of-bluebonnets.-The-tall-elegant-bird-stands-with-its-long-nec.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-25-06.39.26-An-abstract-expressionist-painting-of-a-lone-heron-desperately-seeking-fish-in-a-field-of-bluebonnets.-The-tall-elegant-bird-stands-with-its-long-nec.webp"
 ---
 

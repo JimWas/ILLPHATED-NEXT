@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/04/Bluebonnets-in-Tundra-ILLPHATED.jpg"
+featured_image: "/media/2025/04/Bluebonnets-in-Tundra-ILLPHATED.jpg"
 featured_image_relative: "2025/04/Bluebonnets-in-Tundra-ILLPHATED.jpg"
 ---
 

@@ -9,13 +9,13 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/08/UFC-WHITE-HOUSE-CAPITOL-CLASH-JULY-4-ILLPHATED.png"
+featured_image: "/media/2025/08/UFC-WHITE-HOUSE-CAPITOL-CLASH-JULY-4-ILLPHATED.png"
 featured_image_relative: "2025/08/UFC-WHITE-HOUSE-CAPITOL-CLASH-JULY-4-ILLPHATED-scaled.png"
 ---
 
 How to Score a Ticket to the UFC’s White House Fight—If You’re Elite Enough
 
-[video width="1280" height="720" mp4="../media/2025/08/UFC_White_House_Fight_VIP_Access.mp4"][/video]
+[video width="1280" height="720" mp4="/media/2025/08/UFC_White_House_Fight_VIP_Access.mp4"][/video]
 
 Imagine it: a historic UFC cage match unfolding on the South Lawn of the White House, framed by the White House itself on one side and the Washington Monument on the other—a once-in-a-lifetime spectacle planned for July 4, 2026, part of America’s 250th anniversary celebrations.
 

@@ -11,4 +11,4 @@ categories:
 tags: []
 ---
 
-![Image](../media/2024/12/ScreenShot.000206.1776-washington-Google-Search2024-12-02.@2x-300x151.jpg)
+![Image](/media/2024/12/ScreenShot.000206.1776-washington-Google-Search2024-12-02.@2x-300x151.jpg)

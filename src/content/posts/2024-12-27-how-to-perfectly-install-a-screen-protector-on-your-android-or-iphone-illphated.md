@@ -13,4 +13,4 @@ tags: []
 
 https://youtu.be/5nGbYKbs60o
 
-![Image](../media/2024/12/ScreenShot.000403.Video-details-YouTube-Studio-2024-12-27.@2x-300x232.jpg)
+![Image](/media/2024/12/ScreenShot.000403.Video-details-YouTube-Studio-2024-12-27.@2x-300x232.jpg)

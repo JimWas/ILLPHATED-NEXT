@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-01-17.35.59-A-dystopian-cityscape-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-Everyday-people-dressed-in-modern-yet-worn-down-business-attire-are.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-01-17.35.59-A-dystopian-cityscape-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-Everyday-people-dressed-in-modern-yet-worn-down-business-attire-are.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-01-17.35.59-A-dystopian-cityscape-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-Everyday-people-dressed-in-modern-yet-worn-down-business-attire-are.webp"
 ---
 

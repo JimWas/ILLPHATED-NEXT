@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-10-17.52.05-A-futuristic-scene-in-a-Blade-Runner-_-steampunk-universe-with-vaporwave-colors.-The-image-features-a-tech-savvy-character-wearing-sleek-Anker-Soundco.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-10-17.52.05-A-futuristic-scene-in-a-Blade-Runner-_-steampunk-universe-with-vaporwave-colors.-The-image-features-a-tech-savvy-character-wearing-sleek-Anker-Soundco.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-10-17.52.05-A-futuristic-scene-in-a-Blade-Runner-_-steampunk-universe-with-vaporwave-colors.-The-image-features-a-tech-savvy-character-wearing-sleek-Anker-Soundco.webp"
 ---
 

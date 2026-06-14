@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-27-12.12.07-A-cyberpunk-style-man-surrounded-by-a-massive-collection-of-smartphones-in-a-Blade-Runner-inspired-cityscape.-The-scene-is-illuminated-with-neon-vapor.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-27-12.12.07-A-cyberpunk-style-man-surrounded-by-a-massive-collection-of-smartphones-in-a-Blade-Runner-inspired-cityscape.-The-scene-is-illuminated-with-neon-vapor.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-27-12.12.07-A-cyberpunk-style-man-surrounded-by-a-massive-collection-of-smartphones-in-a-Blade-Runner-inspired-cityscape.-The-scene-is-illuminated-with-neon-vapor.webp"
 ---
 

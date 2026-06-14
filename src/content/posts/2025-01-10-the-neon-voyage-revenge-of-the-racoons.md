@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-10-07.55.01-A-surreal-vaporwave-style-scene-with-raccoons-in-a-Blade-Runner-inspired-universe.-The-raccoons-are-depicted-as-commanders-of-a-starship-fleet-standi.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-10-07.55.01-A-surreal-vaporwave-style-scene-with-raccoons-in-a-Blade-Runner-inspired-universe.-The-raccoons-are-depicted-as-commanders-of-a-starship-fleet-standi.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-10-07.55.01-A-surreal-vaporwave-style-scene-with-raccoons-in-a-Blade-Runner-inspired-universe.-The-raccoons-are-depicted-as-commanders-of-a-starship-fleet-standi.webp"
 ---
 

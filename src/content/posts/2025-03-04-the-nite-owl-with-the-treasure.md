@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-03-21.35.04-An-abstract-expressionist-painting-of-a-night-owl-on-the-hunt.-The-owl-soars-through-a-dark-swirling-sky-her-wings-cutting-through-the-chaotic-energ.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-03-21.35.04-An-abstract-expressionist-painting-of-a-night-owl-on-the-hunt.-The-owl-soars-through-a-dark-swirling-sky-her-wings-cutting-through-the-chaotic-energ.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-03-21.35.04-An-abstract-expressionist-painting-of-a-night-owl-on-the-hunt.-The-owl-soars-through-a-dark-swirling-sky-her-wings-cutting-through-the-chaotic-energ.webp"
 ---
 

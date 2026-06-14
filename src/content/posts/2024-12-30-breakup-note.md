@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2024/12/DALL\u00b7E-2024-12-29-19.27.23-A-heartfelt-breakup-note-written-in-elegant-handwriting-on-a-glowing-neon-background-with-vaporwave-colors-set-in-a-Blade-Runner-inspired-futuristic-.webp"
+featured_image: "/media/2024/12/DALL\u00b7E-2024-12-29-19.27.23-A-heartfelt-breakup-note-written-in-elegant-handwriting-on-a-glowing-neon-background-with-vaporwave-colors-set-in-a-Blade-Runner-inspired-futuristic-.webp"
 featured_image_relative: "2024/12/DALL\u00b7E-2024-12-29-19.27.23-A-heartfelt-breakup-note-written-in-elegant-handwriting-on-a-glowing-neon-background-with-vaporwave-colors-set-in-a-Blade-Runner-inspired-futuristic-.webp"
 ---
 

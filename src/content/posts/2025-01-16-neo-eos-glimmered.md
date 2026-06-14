@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-16-11.57.17-A-futuristic-cityscape-in-the-Blade-Runner-universe-with-a-vaporwave-aesthetic-featuring-neon-lit-skyscrapers-and-a-sultry-news-anchor-on-a-massive-h.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-16-11.57.17-A-futuristic-cityscape-in-the-Blade-Runner-universe-with-a-vaporwave-aesthetic-featuring-neon-lit-skyscrapers-and-a-sultry-news-anchor-on-a-massive-h.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-16-11.57.17-A-futuristic-cityscape-in-the-Blade-Runner-universe-with-a-vaporwave-aesthetic-featuring-neon-lit-skyscrapers-and-a-sultry-news-anchor-on-a-massive-h.webp"
 ---
 

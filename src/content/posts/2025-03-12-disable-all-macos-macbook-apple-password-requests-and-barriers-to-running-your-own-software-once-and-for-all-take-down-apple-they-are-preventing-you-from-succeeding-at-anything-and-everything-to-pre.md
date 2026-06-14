@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-12-12.10.48-A-giant-apple-on-Mars-being-destroyed-by-an-axe-going-through-it.-The-scene-is-set-in-a-Blade-Runner-inspired-universe-with-cyberpunk-architecture-in-.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-12-12.10.48-A-giant-apple-on-Mars-being-destroyed-by-an-axe-going-through-it.-The-scene-is-set-in-a-Blade-Runner-inspired-universe-with-cyberpunk-architecture-in-.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-12-12.10.48-A-giant-apple-on-Mars-being-destroyed-by-an-axe-going-through-it.-The-scene-is-set-in-a-Blade-Runner-inspired-universe-with-cyberpunk-architecture-in-.webp"
 ---
 

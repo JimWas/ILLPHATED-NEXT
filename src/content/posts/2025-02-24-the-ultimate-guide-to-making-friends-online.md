@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-24-15.41.34-A-cyberpunk-inspired-online-social-hub-in-a-Blade-Runner-universe-glowing-with-vaporwave-neon-colors.-Futuristic-avatars-interact-in-a-virtual-realit.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-24-15.41.34-A-cyberpunk-inspired-online-social-hub-in-a-Blade-Runner-universe-glowing-with-vaporwave-neon-colors.-Futuristic-avatars-interact-in-a-virtual-realit.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-24-15.41.34-A-cyberpunk-inspired-online-social-hub-in-a-Blade-Runner-universe-glowing-with-vaporwave-neon-colors.-Futuristic-avatars-interact-in-a-virtual-realit.webp"
 ---
 

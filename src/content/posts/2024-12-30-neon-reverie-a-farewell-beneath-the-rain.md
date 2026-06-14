@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2024/12/DALL\u00b7E-2024-12-29-19.51.06-A-vibrant-vaporwave-inspired-scene-set-in-a-Blade-Runner-universe.-The-background-features-a-futuristic-cityscape-with-towering-neon-lit-skyscrapers-a.webp"
+featured_image: "/media/2024/12/DALL\u00b7E-2024-12-29-19.51.06-A-vibrant-vaporwave-inspired-scene-set-in-a-Blade-Runner-universe.-The-background-features-a-futuristic-cityscape-with-towering-neon-lit-skyscrapers-a.webp"
 featured_image_relative: "2024/12/DALL\u00b7E-2024-12-29-19.51.06-A-vibrant-vaporwave-inspired-scene-set-in-a-Blade-Runner-universe.-The-background-features-a-futuristic-cityscape-with-towering-neon-lit-skyscrapers-a.webp"
 ---
 

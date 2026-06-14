@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-19-08.44.44-A-futuristic-reimagining-of-Palmetto-State-Park-in-the-style-of-a-Blade-Runner-universe-featuring-vibrant-vaporwave-colors.-The-scene-includes-toweri.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-19-08.44.44-A-futuristic-reimagining-of-Palmetto-State-Park-in-the-style-of-a-Blade-Runner-universe-featuring-vibrant-vaporwave-colors.-The-scene-includes-toweri.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-19-08.44.44-A-futuristic-reimagining-of-Palmetto-State-Park-in-the-style-of-a-Blade-Runner-universe-featuring-vibrant-vaporwave-colors.-The-scene-includes-toweri.webp"
 ---
 

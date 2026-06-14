@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-10-09.59.00-A-futuristic-highway-on-Mars-inspired-by-the-Blade-Runner-universe-with-vaporwave-aesthetics.-The-road-is-busy-with-sleek-cyberpunk-style-vehicles-.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-10-09.59.00-A-futuristic-highway-on-Mars-inspired-by-the-Blade-Runner-universe-with-vaporwave-aesthetics.-The-road-is-busy-with-sleek-cyberpunk-style-vehicles-.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-10-09.59.00-A-futuristic-highway-on-Mars-inspired-by-the-Blade-Runner-universe-with-vaporwave-aesthetics.-The-road-is-busy-with-sleek-cyberpunk-style-vehicles-.webp"
 ---
 

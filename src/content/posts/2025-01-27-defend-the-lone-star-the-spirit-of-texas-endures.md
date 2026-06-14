@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-27-08.30.59-A-Blade-Runner-inspired-scene-showcasing-the-phrase-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures-in-glowing-neon-vaporwave-colors.-The-setting.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-27-08.30.59-A-Blade-Runner-inspired-scene-showcasing-the-phrase-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures-in-glowing-neon-vaporwave-colors.-The-setting.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-27-08.30.59-A-Blade-Runner-inspired-scene-showcasing-the-phrase-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures-in-glowing-neon-vaporwave-colors.-The-setting.webp"
 ---
 

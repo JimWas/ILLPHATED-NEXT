@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/An-Irish-cowboy-with-red-hair-and-an-Irish-cowgirl-with-green-eyes-and-blonde-hair-on-a-Mustang-horse-with-the-tagline-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures.jpg"
+featured_image: "/media/2025/03/An-Irish-cowboy-with-red-hair-and-an-Irish-cowgirl-with-green-eyes-and-blonde-hair-on-a-Mustang-horse-with-the-tagline-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures.jpg"
 featured_image_relative: "2025/03/An-Irish-cowboy-with-red-hair-and-an-Irish-cowgirl-with-green-eyes-and-blonde-hair-on-a-Mustang-horse-with-the-tagline-Defend-the-Lone-Star-The-Spirit-of-Texas-Endures.jpg"
 ---
 

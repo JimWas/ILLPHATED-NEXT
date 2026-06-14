@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-30-08.12.49-On-the-dusty-red-surface-of-Mars-under-a-sky-streaked-with-neon-purples-and-deep-blues-a-pair-of-figures-work-the-land.-The-air-is-crisp-but-thin-a.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-30-08.12.49-On-the-dusty-red-surface-of-Mars-under-a-sky-streaked-with-neon-purples-and-deep-blues-a-pair-of-figures-work-the-land.-The-air-is-crisp-but-thin-a.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-30-08.12.49-On-the-dusty-red-surface-of-Mars-under-a-sky-streaked-with-neon-purples-and-deep-blues-a-pair-of-figures-work-the-land.-The-air-is-crisp-but-thin-a.webp"
 ---
 

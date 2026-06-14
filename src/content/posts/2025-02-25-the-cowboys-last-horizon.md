@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-25-07.09.45-A-striking-digital-painting-of-an-Irish-American-cowboy-with-flowing-red-hair-and-dark-brown-eyes-blending-into-the-abstract-background.-His-face-is-.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-25-07.09.45-A-striking-digital-painting-of-an-Irish-American-cowboy-with-flowing-red-hair-and-dark-brown-eyes-blending-into-the-abstract-background.-His-face-is-.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-25-07.09.45-A-striking-digital-painting-of-an-Irish-American-cowboy-with-flowing-red-hair-and-dark-brown-eyes-blending-into-the-abstract-background.-His-face-is-.webp"
 ---
 

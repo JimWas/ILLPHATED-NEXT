@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-26-14.18.19-A-futuristic-Martian-landscape-filled-with-towering-neon-billboards-and-holographic-advertisements-reminiscent-of-Blade-Runner-aesthetics.-The-scene-.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-26-14.18.19-A-futuristic-Martian-landscape-filled-with-towering-neon-billboards-and-holographic-advertisements-reminiscent-of-Blade-Runner-aesthetics.-The-scene-.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-26-14.18.19-A-futuristic-Martian-landscape-filled-with-towering-neon-billboards-and-holographic-advertisements-reminiscent-of-Blade-Runner-aesthetics.-The-scene-.webp"
 ---
 

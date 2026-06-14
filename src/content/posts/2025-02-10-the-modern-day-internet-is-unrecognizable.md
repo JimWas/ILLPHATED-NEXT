@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-10-10.22.01-A-cyberpunk-cityscape-in-the-Blade-Runner-universe-with-vaporwave-colors.-Neon-lights-glow-in-pink-blue-and-purple-hues-reflecting-off-rain-soaked-.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-10-10.22.01-A-cyberpunk-cityscape-in-the-Blade-Runner-universe-with-vaporwave-colors.-Neon-lights-glow-in-pink-blue-and-purple-hues-reflecting-off-rain-soaked-.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-10-10.22.01-A-cyberpunk-cityscape-in-the-Blade-Runner-universe-with-vaporwave-colors.-Neon-lights-glow-in-pink-blue-and-purple-hues-reflecting-off-rain-soaked-.webp"
 ---
 

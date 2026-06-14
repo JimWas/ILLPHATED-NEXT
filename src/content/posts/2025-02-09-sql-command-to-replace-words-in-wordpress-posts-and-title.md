@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-08-19.51.23-A-digital-representation-of-an-SQL-command-displayed-on-a-futuristic-computer-screen.-The-screen-shows-SQL-code-with-the-command-to-update-WordPress-p.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-08-19.51.23-A-digital-representation-of-an-SQL-command-displayed-on-a-futuristic-computer-screen.-The-screen-shows-SQL-code-with-the-command-to-update-WordPress-p.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-08-19.51.23-A-digital-representation-of-an-SQL-command-displayed-on-a-futuristic-computer-screen.-The-screen-shows-SQL-code-with-the-command-to-update-WordPress-p.webp"
 ---
 

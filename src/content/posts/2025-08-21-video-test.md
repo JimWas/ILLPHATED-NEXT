@@ -9,8 +9,8 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/08/cropped-illphated_logo-103x106-1.png"
+featured_image: "/media/2025/08/cropped-illphated_logo-103x106-1.png"
 featured_image_relative: "2025/08/cropped-illphated_logo-103x106-1.png"
 ---
 
-[video width="852" height="468" mp4="../media/2025/08/video_2025-08-21_11-36-08.mp4"][/video]
+[video width="852" height="468" mp4="/media/2025/08/video_2025-08-21_11-36-08.mp4"][/video]

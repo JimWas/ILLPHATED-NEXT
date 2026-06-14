@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/08/Gemini_Generated_Image_kv43onkv43onkv43.png"
+featured_image: "/media/2025/08/Gemini_Generated_Image_kv43onkv43onkv43.png"
 featured_image_relative: "2025/08/Gemini_Generated_Image_kv43onkv43onkv43.png"
 ---
 

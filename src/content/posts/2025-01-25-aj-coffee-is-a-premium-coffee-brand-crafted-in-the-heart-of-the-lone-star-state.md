@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-25-07.31.57-A-vintage-logo-illustration-of-a-beautiful-blonde-woman-with-stunning-green-eyes-and-a-charming-smile-wearing-a-classic-cowgirl-hat.-She-holds-a-coff.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-25-07.31.57-A-vintage-logo-illustration-of-a-beautiful-blonde-woman-with-stunning-green-eyes-and-a-charming-smile-wearing-a-classic-cowgirl-hat.-She-holds-a-coff.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-25-07.31.57-A-vintage-logo-illustration-of-a-beautiful-blonde-woman-with-stunning-green-eyes-and-a-charming-smile-wearing-a-classic-cowgirl-hat.-She-holds-a-coff-W3XRwhBFcYgM.webp"
 ---
 

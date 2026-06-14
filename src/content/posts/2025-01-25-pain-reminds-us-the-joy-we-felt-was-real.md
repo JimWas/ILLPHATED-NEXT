@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-25-17.31.56-A-Blade-Runner-inspired-futuristic-cityscape-at-night-with-neon-vaporwave-colors-like-bright-pinks-purples-and-blues.-The-scene-includes-towering-s.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-25-17.31.56-A-Blade-Runner-inspired-futuristic-cityscape-at-night-with-neon-vaporwave-colors-like-bright-pinks-purples-and-blues.-The-scene-includes-towering-s.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-25-17.31.56-A-Blade-Runner-inspired-futuristic-cityscape-at-night-with-neon-vaporwave-colors-like-bright-pinks-purples-and-blues.-The-scene-includes-towering-s.webp"
 ---
 

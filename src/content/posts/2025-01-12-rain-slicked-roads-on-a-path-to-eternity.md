@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/file-CZWc7mRU42kHwbcReh17ma.webp"
+featured_image: "/media/2025/01/file-CZWc7mRU42kHwbcReh17ma.webp"
 featured_image_relative: "2025/01/file-CZWc7mRU42kHwbcReh17ma.webp"
 ---
 

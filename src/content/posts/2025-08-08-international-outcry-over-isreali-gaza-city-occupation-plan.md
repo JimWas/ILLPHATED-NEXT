@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/08/Gemini_Generated_Image_jmaxajmaxajmaxaj.png"
+featured_image: "/media/2025/08/Gemini_Generated_Image_jmaxajmaxajmaxaj.png"
 featured_image_relative: "2025/08/Gemini_Generated_Image_jmaxajmaxajmaxaj.png"
 ---
 
@@ -17,7 +17,7 @@ International Outcry Over Gaza City Occupation Plan
 
 Israel’s announcement that its military would “take control” of Gaza City—part of the 2.3 million–strong Gaza Strip devastated by nearly two years of war—has touched off a storm of global condemnation. Since October 2023, Israeli operations in Gaza have killed over 61,000 people aa.com.tr and created what aid agencies describe as an “unprecedented” humanitarian catastrophe. The Gaza City plan, approved by Israel’s war cabinet on August 8, escalates military action in Gaza’s densely populated north and would require mass displacement of civilians. Numerous governments and international bodies warn the move violates international law and will deepen Gaza’s suffering. For example, the UN Human Rights Chief Volker Türk said Israel’s plan “must be immediately halted” aljazeera.com.
 
-[video width="1280" height="720" mp4="../media/2025/08/Merkava_Tank_Enters_Gaza.mp4" loop="true" autoplay="true" preload="auto"][/video]
+[video width="1280" height="720" mp4="/media/2025/08/Merkava_Tank_Enters_Gaza.mp4" loop="true" autoplay="true" preload="auto"][/video]
 
 Middle Eastern and Arab Reactions
 

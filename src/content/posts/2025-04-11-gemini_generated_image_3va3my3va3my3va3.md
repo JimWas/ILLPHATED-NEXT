@@ -9,10 +9,10 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/04/Gemini_Generated_Image_3va3my3va3my3va3.jpeg"
+featured_image: "/media/2025/04/Gemini_Generated_Image_3va3my3va3my3va3.jpeg"
 featured_image_relative: "2025/04/Gemini_Generated_Image_3va3my3va3my3va3.jpeg"
 ---
 
-![Image](../media/2025/04/Gemini_Generated_Image_3va3my3va3my3va3.jpeg)
+![Image](/media/2025/04/Gemini_Generated_Image_3va3my3va3my3va3.jpeg)
 
 Gemini_Generated_Image_3va3my3va3my3va3

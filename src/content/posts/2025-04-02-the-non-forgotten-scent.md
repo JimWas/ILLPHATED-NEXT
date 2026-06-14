@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/04/file_0000000017ec51f7883dc884d6e9180d_conversation_id67ecdb97-5250-8007-be24-1ecd11111e3fmessage_idbd033d4b-661a-4dd9-9a54-ea93a8cee5ac.webp"
+featured_image: "/media/2025/04/file_0000000017ec51f7883dc884d6e9180d_conversation_id67ecdb97-5250-8007-be24-1ecd11111e3fmessage_idbd033d4b-661a-4dd9-9a54-ea93a8cee5ac.webp"
 featured_image_relative: "2025/04/file_0000000017ec51f7883dc884d6e9180d_conversation_id67ecdb97-5250-8007-be24-1ecd11111e3fmessage_idbd033d4b-661a-4dd9-9a54-ea93a8cee5ac.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-30-10.34.51-A-world-leader-stands-at-a-neon-lit-podium-in-a-futuristic-Blade-Runner-style-cityscape-delivering-a-powerful-speech-of-truth.-The-background-is-fill.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-30-10.34.51-A-world-leader-stands-at-a-neon-lit-podium-in-a-futuristic-Blade-Runner-style-cityscape-delivering-a-powerful-speech-of-truth.-The-background-is-fill.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-30-10.34.51-A-world-leader-stands-at-a-neon-lit-podium-in-a-futuristic-Blade-Runner-style-cityscape-delivering-a-powerful-speech-of-truth.-The-background-is-fill.webp"
 ---
 

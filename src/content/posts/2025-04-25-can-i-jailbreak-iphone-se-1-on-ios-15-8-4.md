@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/04/iphone-se-1-iOS-15.8.4-.jpg"
+featured_image: "/media/2025/04/iphone-se-1-iOS-15.8.4-.jpg"
 featured_image_relative: "2025/04/iphone-se-1-iOS-15.8.4-.jpg"
 ---
 

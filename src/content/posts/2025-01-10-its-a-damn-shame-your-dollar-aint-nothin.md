@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-09-20.19.45-A-futuristic-cityscape-inspired-by-Blade-Runner-featuring-a-neon-lit-skyline-with-towering-skyscrapers-and-glowing-holographic-advertisements.-The-sc.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-09-20.19.45-A-futuristic-cityscape-inspired-by-Blade-Runner-featuring-a-neon-lit-skyline-with-towering-skyscrapers-and-glowing-holographic-advertisements.-The-sc.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-09-20.19.45-A-futuristic-cityscape-inspired-by-Blade-Runner-featuring-a-neon-lit-skyline-with-towering-skyscrapers-and-glowing-holographic-advertisements.-The-sc.webp"
 ---
 

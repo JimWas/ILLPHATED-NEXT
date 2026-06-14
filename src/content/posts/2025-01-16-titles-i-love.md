@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-16-12.20.38-A-Blade-Runner-inspired-futuristic-cityscape-drenched-in-vaporwave-colors.-Neon-lit-skyscrapers-loom-under-a-rain-soaked-sky-their-reflections-shimme.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-16-12.20.38-A-Blade-Runner-inspired-futuristic-cityscape-drenched-in-vaporwave-colors.-Neon-lit-skyscrapers-loom-under-a-rain-soaked-sky-their-reflections-shimme.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-16-12.20.38-A-Blade-Runner-inspired-futuristic-cityscape-drenched-in-vaporwave-colors.-Neon-lit-skyscrapers-loom-under-a-rain-soaked-sky-their-reflections-shimme.webp"
 ---
 

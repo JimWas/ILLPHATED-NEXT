@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-08-15.19.59-A-cyberpunk-style-futuristic-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-A-high-tech-user-is-seen-sitting-in-a-dimly-lit-room-with.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-08-15.19.59-A-cyberpunk-style-futuristic-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-A-high-tech-user-is-seen-sitting-in-a-dimly-lit-room-with.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-08-15.19.59-A-cyberpunk-style-futuristic-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-A-high-tech-user-is-seen-sitting-in-a-dimly-lit-room-with.webp"
 ---
 

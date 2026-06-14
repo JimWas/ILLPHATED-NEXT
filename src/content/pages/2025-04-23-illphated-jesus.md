@@ -8,7 +8,7 @@ status: "publish"
 author: "illphated"
 categories: []
 tags: []
-featured_image: "../media/2025/04/ILLPHATED-JESUS-1-1.jpg"
+featured_image: "/media/2025/04/ILLPHATED-JESUS-1-1.jpg"
 featured_image_relative: "2025/04/ILLPHATED-JESUS-1-1.jpg"
 ---
 
@@ -34,7 +34,7 @@ done
 echo "Renaming completed!"
 ```
 
-![ILLPHATED JESUS](../media/2025/04/ILLPHATED-JESUS-1.jpg)
+![ILLPHATED JESUS](/media/2025/04/ILLPHATED-JESUS-1.jpg)
 
 ![Image]()
 

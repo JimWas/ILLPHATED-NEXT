@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-24-12.58.35-A-cyberpunk-scene-in-the-style-of-Blade-Runner-with-vaporwave-colors.-A-person-is-removing-a-super-sticky-bandage-from-their-arm-illuminated-by-neon-.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-24-12.58.35-A-cyberpunk-scene-in-the-style-of-Blade-Runner-with-vaporwave-colors.-A-person-is-removing-a-super-sticky-bandage-from-their-arm-illuminated-by-neon-.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-24-12.58.35-A-cyberpunk-scene-in-the-style-of-Blade-Runner-with-vaporwave-colors.-A-person-is-removing-a-super-sticky-bandage-from-their-arm-illuminated-by-neon-.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-26-09.23.12-A-space-cowboy-with-red-hair-and-a-red-beard-stands-on-the-surface-of-Mars-surrounded-by-a-group-of-wild-animals-including-a-wolf-a-tiger-and-a-fu.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-26-09.23.12-A-space-cowboy-with-red-hair-and-a-red-beard-stands-on-the-surface-of-Mars-surrounded-by-a-group-of-wild-animals-including-a-wolf-a-tiger-and-a-fu.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-26-09.23.12-A-space-cowboy-with-red-hair-and-a-red-beard-stands-on-the-surface-of-Mars-surrounded-by-a-group-of-wild-animals-including-a-wolf-a-tiger-and-a-fu.webp"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-08-15.12.13-A-futuristic-cyberpunk-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-The-city-is-drenched-in-hues-of-pink-purple-and-blue-with-to.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-08-15.12.13-A-futuristic-cyberpunk-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-The-city-is-drenched-in-hues-of-pink-purple-and-blue-with-to.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-08-15.12.13-A-futuristic-cyberpunk-cityscape-with-neon-vaporwave-colors-inspired-by-Blade-Runner.-The-city-is-drenched-in-hues-of-pink-purple-and-blue-with-to.webp"
 ---
 

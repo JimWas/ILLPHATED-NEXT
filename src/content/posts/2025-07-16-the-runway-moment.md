@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/07/ChatGPT-Image-Jul-16-2025-05_42_58-PM.png"
+featured_image: "/media/2025/07/ChatGPT-Image-Jul-16-2025-05_42_58-PM.png"
 featured_image_relative: "2025/07/ChatGPT-Image-Jul-16-2025-05_42_58-PM.png"
 ---
 

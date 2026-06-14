@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-21-16.49.49-A-surreal-depiction-of-Illphated-George-Washington-crossing-a-glowing-river-between-Earth-and-Mars-in-a-Blade-Runner-inspired-universe.-The-figure-is-.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-21-16.49.49-A-surreal-depiction-of-Illphated-George-Washington-crossing-a-glowing-river-between-Earth-and-Mars-in-a-Blade-Runner-inspired-universe.-The-figure-is-.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-21-16.49.49-A-surreal-depiction-of-Illphated-George-Washington-crossing-a-glowing-river-between-Earth-and-Mars-in-a-Blade-Runner-inspired-universe.-The-figure-is-.webp"
 ---
 

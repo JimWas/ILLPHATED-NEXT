@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-03-12.04.37-A-futuristic-campsite-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-The-campsite-has-neon-lit-tents-glowing-lantern-posts-and-a-cyberpu.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-03-12.04.37-A-futuristic-campsite-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-The-campsite-has-neon-lit-tents-glowing-lantern-posts-and-a-cyberpu.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-03-12.04.37-A-futuristic-campsite-in-a-Blade-Runner-inspired-universe-with-vaporwave-colors.-The-campsite-has-neon-lit-tents-glowing-lantern-posts-and-a-cyberpu.webp"
 ---
 

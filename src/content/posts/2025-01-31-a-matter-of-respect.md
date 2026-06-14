@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/01/DALL\u00b7E-2025-01-31-14.29.10-A-cyberpunk-Wild-West-duel-in-a-Blade-Runner-inspired-futuristic-city-bathed-in-neon-vaporwave-colors.-Two-gunslingers-face-off-in-the-rain-soaked-st.webp"
+featured_image: "/media/2025/01/DALL\u00b7E-2025-01-31-14.29.10-A-cyberpunk-Wild-West-duel-in-a-Blade-Runner-inspired-futuristic-city-bathed-in-neon-vaporwave-colors.-Two-gunslingers-face-off-in-the-rain-soaked-st.webp"
 featured_image_relative: "2025/01/DALL\u00b7E-2025-01-31-14.29.10-A-cyberpunk-Wild-West-duel-in-a-Blade-Runner-inspired-futuristic-city-bathed-in-neon-vaporwave-colors.-Two-gunslingers-face-off-in-the-rain-soaked-st.webp"
 ---
 

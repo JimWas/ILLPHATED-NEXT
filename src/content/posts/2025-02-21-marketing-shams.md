@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/02/DALL\u00b7E-2025-02-20-19.44.44-A-cyberpunk-Blade-Runner-inspired-kitchen-illuminated-by-neon-vaporwave-colors.-The-countertop-features-a-futuristic-boxed-cake-mix-with-a-glowing-re.webp"
+featured_image: "/media/2025/02/DALL\u00b7E-2025-02-20-19.44.44-A-cyberpunk-Blade-Runner-inspired-kitchen-illuminated-by-neon-vaporwave-colors.-The-countertop-features-a-futuristic-boxed-cake-mix-with-a-glowing-re.webp"
 featured_image_relative: "2025/02/DALL\u00b7E-2025-02-20-19.44.44-A-cyberpunk-Blade-Runner-inspired-kitchen-illuminated-by-neon-vaporwave-colors.-The-countertop-features-a-futuristic-boxed-cake-mix-with-a-glowing-re.webp"
 ---
 

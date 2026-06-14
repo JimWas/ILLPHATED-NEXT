@@ -8,7 +8,7 @@ status: "publish"
 author: "illphated"
 categories: []
 tags: []
-featured_image: "../media/2025/04/illphated_converter.jpg"
+featured_image: "/media/2025/04/illphated_converter.jpg"
 featured_image_relative: "2025/04/illphated_converter.jpg"
 ---
 

@@ -9,7 +9,7 @@ author: "illphated"
 categories:
   - "Uncategorized"
 tags: []
-featured_image: "../media/2025/03/DALL\u00b7E-2025-03-17-21.16.14-A-rugged-Irish-cowboy-with-red-hair-and-a-thick-beard-wearing-a-black-cowboy-hat-and-a-leather-vest-sitting-confidently-on-a-strong-Mustang-horse.-B.webp"
+featured_image: "/media/2025/03/DALL\u00b7E-2025-03-17-21.16.14-A-rugged-Irish-cowboy-with-red-hair-and-a-thick-beard-wearing-a-black-cowboy-hat-and-a-leather-vest-sitting-confidently-on-a-strong-Mustang-horse.-B.webp"
 featured_image_relative: "2025/03/DALL\u00b7E-2025-03-17-21.16.14-A-rugged-Irish-cowboy-with-red-hair-and-a-thick-beard-wearing-a-black-cowboy-hat-and-a-leather-vest-sitting-confidently-on-a-strong-Mustang-horse.-B.webp"
 ---
 
