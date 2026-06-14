@@ -1,12 +1,50 @@
 import { getPostData, getAllPostData } from "@/lib/posts";
 import Link from "next/link";
 import Image from "next/image";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const posts = getAllPostData();
   return posts.map((post) => ({
     slug: post.slug,
   }));
+}
+
+export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await props.params;
+  const postData = await getPostData(slug);
+  const baseUrl = "https://www.illphated.com";
+  
+  const title = postData.title || slug;
+  const description = postData.excerpt || `Mission Log transmission from illphated.com: ${title}`;
+  const imageUrl = postData.featured_image ? `${baseUrl}${postData.featured_image}` : `${baseUrl}/nasa-og.png`;
+
+  return {
+    title: `${title} | ILLPHATED.COM`,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: `${baseUrl}/archive/${slug}`,
+      siteName: "ILLPHATED.COM",
+      images: [
+        {
+          url: imageUrl,
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+      type: "article",
+      publishedTime: postData.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [imageUrl],
+    },
+  };
 }
 
 export default async function Post(props: { params: Promise<{ slug: string }> }) {
