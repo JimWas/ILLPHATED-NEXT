@@ -55,6 +55,17 @@ export default function Home() {
               <h3 className="text-2xl nasalization mb-2">OPERATIONS BOARD</h3>
               <p className="text-sm opacity-80 uppercase tracking-tighter font-bold">Real-time Feed Active</p>
             </Link>
+
+            <Link 
+              href="/gps"
+              className="group relative block p-8 border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-all overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30">
+                <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <h3 className="text-2xl nasalization mb-2">MISSION_TRACKER</h3>
+              <p className="text-sm opacity-80 uppercase tracking-tighter font-bold">Live GPS Telemetry</p>
+            </Link>
           </div>
         </div>
       </main>
