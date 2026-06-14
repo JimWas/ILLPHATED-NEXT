@@ -11,6 +11,8 @@ export interface PostData {
   title: string;
   date: string;
   contentHtml: string;
+  featured_image?: string;
+  author?: string;
   [key: string]: any;
 }
 
@@ -24,11 +26,10 @@ export function getAllPostData() {
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const matterResult = matter(fileContents);
 
-      const { slug: _unused, ...otherData } = matterResult.data;
       return {
         slug,
-        ...(otherData as { title: string; date: string }),
-      };
+        ...matterResult.data,
+      } as PostData;
     });
 
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -48,6 +49,6 @@ export async function getPostData(slug: string): Promise<PostData> {
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { title: string; date: string }),
-  };
+    ...matterResult.data,
+  } as PostData;
 }

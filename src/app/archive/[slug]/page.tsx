@@ -37,6 +37,16 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </div>
           </div>
 
+          {postData.featured_image && (
+            <div className="w-full border-b-2 border-nasa-blue bg-black flex justify-center overflow-hidden">
+               <img 
+                 src={postData.featured_image} 
+                 alt="" 
+                 className="max-w-full h-auto object-contain"
+               />
+            </div>
+          )}
+
           <div 
             className="p-8 md:p-12 prose prose-lg max-w-none prose-headings:nasalization prose-headings:text-nasa-blue prose-a:text-nasa-red prose-img:border-2 prose-img:border-nasa-blue"
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 

@@ -29,18 +29,29 @@ export default function ArchivePage() {
               <Link 
                 key={post.slug} 
                 href={`/archive/${post.slug}`}
-                className="group bg-white border border-gray-200 p-6 hover:border-nasa-blue hover:shadow-xl transition-all relative overflow-hidden flex flex-col justify-between"
+                className="group bg-white border border-gray-200 hover:border-nasa-blue hover:shadow-xl transition-all relative overflow-hidden flex flex-col"
               >
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gray-50 -mr-8 -mt-8 rotate-45 group-hover:bg-nasa-blue transition-colors"></div>
-                
-                <div>
-                  <p className="text-[10px] font-mono text-nasa-red mb-2">{post.date}</p>
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-nasa-blue mb-4 leading-tight">{post.title || post.slug}</h3>
-                </div>
-                
-                <div className="flex justify-between items-center mt-4">
-                  <span className="text-[10px] nasalization text-gray-400 group-hover:text-nasa-blue">READ_FULL_LOG</span>
-                  <span className="text-nasa-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                {post.featured_image && (
+                  <div className="w-full aspect-video overflow-hidden border-b border-gray-100">
+                    <img 
+                      src={post.featured_image} 
+                      alt="" 
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-gray-50 -mr-8 -mt-8 rotate-45 group-hover:bg-nasa-blue transition-colors z-10"></div>
+                  
+                  <div>
+                    <p className="text-[10px] font-mono text-nasa-red mb-2">{post.date}</p>
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-nasa-blue mb-4 leading-tight">{post.title || post.slug}</h3>
+                  </div>
+                  
+                  <div className="flex justify-between items-center mt-4">
+                    <span className="text-[10px] nasalization text-gray-400 group-hover:text-nasa-blue">READ_FULL_LOG</span>
+                    <span className="text-nasa-blue opacity-0 group-hover:opacity-100 transition-opacity">→</span>
+                  </div>
                 </div>
               </Link>
             ))}
