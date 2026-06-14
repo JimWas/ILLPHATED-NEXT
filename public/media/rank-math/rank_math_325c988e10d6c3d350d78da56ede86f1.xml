@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="//illphated.com/video-sitemap.xsl"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-video/1.1 http://www.google.com/schemas/sitemap-video/1.1/sitemap-video.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url>
+		<loc>https://illphated.com/</loc>
+		<video:video>
+			<video:title><![CDATA[https://github.com/JimWas/Twitch-Viewbot-Proxy World of Warcraft #illphated Path of Exile 2 #poe2]]></video:title>
+			<video:publication_date>2025-09-08T10:19:28-07:00</video:publication_date>
+			<video:description><![CDATA[Twitch Viewbot Proxy — Python Automation Tool for Twitch Viewer SimulationTwitch Viewbot Proxy is a Python-based Twitch viewer bot that uses SOCKS5/HTTP prox...]]></video:description>
+			<video:player_loc>https://www.youtube.com/embed/Ei7K1A3jdms</video:player_loc>
+			<video:thumbnail_loc>https://illphated.com/wp-content/uploads/2024/12/cropped-illphated_logo-1.png</video:thumbnail_loc>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:uploader info="https://illphated.com/author/illphated/">illphated</video:uploader>
+		</video:video>
+	</url>
+	<url>
+		<loc>https://illphated.com/how-to-score-a-ticket-to-the-ufcs-white-house-fight-if-youre-elite-enough/illphated/</loc>
+		<video:video>
+			<video:title><![CDATA[How to Score a Ticket to the UFC’s White House Fight—If You’re Elite Enough | illphated dot COM]]></video:title>
+			<video:description><![CDATA[How to Score a Ticket to the UFC’s White House Fight—If You’re Elite Enough How to Score a Ticket to the UFC’s White House Fight—If You’re Elite Enough | illphated dot COM]]></video:description>
+			<video:player_loc>https://illphated.com/wp-content/uploads/2025/08/UFC_White_House_Fight_VIP_Access.mp4</video:player_loc>
+			<video:thumbnail_loc>https://illphated.com/wp-content/uploads/2025/08/UFC-WHITE-HOUSE-CAPITOL-CLASH-JULY-4-ILLPHATED-scaled.png</video:thumbnail_loc>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:uploader info="https://illphated.com/author/illphated/">illphated</video:uploader>
+		</video:video>
+	</url>
+	<url>
+		<loc>https://illphated.com/international-outcry-over-isreali-gaza-city-occupation-plan/illphated/</loc>
+		<video:video>
+			<video:title><![CDATA[International Outcry Over Isreali Gaza City Occupation Plan | illphated dot COM]]></video:title>
+			<video:description><![CDATA[International Outcry Over Gaza City Occupation Plan International Outcry Over Isreali Gaza City Occupation Plan | illphated dot COM]]></video:description>
+			<video:player_loc>https://illphated.com/wp-content/uploads/2025/08/Merkava_Tank_Enters_Gaza.mp4</video:player_loc>
+			<video:thumbnail_loc>https://illphated.com/wp-content/uploads/2025/08/Gemini_Generated_Image_jmaxajmaxajmaxaj.png</video:thumbnail_loc>
+			<video:family_friendly>yes</video:family_friendly>
+			<video:uploader info="https://illphated.com/author/illphated/">illphated</video:uploader>
+		</video:video>
+	</url>
+</urlset>

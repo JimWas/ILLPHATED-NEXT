@@ -1,0 +1,78 @@
+---
+layout: "post"
+title: "BROWSERSTACKYML FILE WORKING 2025"
+date: "2025-04-09 21:10:38"
+modified: "2025-04-09 21:10:38"
+slug: "browserstackyml-file-working-2025"
+status: "publish"
+author: "illphated"
+categories:
+  - "Uncategorized"
+tags: []
+featured_image: "../media/2025/04/Gemini_Generated_Image_6x66e96x66e96x66.jpeg"
+featured_image_relative: "2025/04/Gemini_Generated_Image_6x66e96x66e96x66.jpeg"
+---
+
+# =============================
+# Set BrowserStack Credentials
+# =============================
+# Add your BrowserStack userName and accessKey here or set BROWSERSTACK_USERNAME and
+# BROWSERSTACK_ACCESS_KEY as env variables
+userName: illphated_JkU6VN
+accessKey: rcyHXCkSVoFUvZK5cgxp
+
+# ======================
+# BrowserStack Reporting
+# ======================
+# The following capabilities are used to set up reporting on BrowserStack:
+# Set 'projectName' to the name of your project. Example, Marketing Website
+projectName: BrowserStack Samples 
+# Set `buildName` as the name of the job / testsuite being run
+buildName: browserstack build 
+# `buildIdentifier` is a unique id to differentiate every execution that gets appended to
+# buildName. Choose your buildIdentifier format from the available expressions:
+# ${BUILD_NUMBER} (Default): Generates an incremental counter with every execution
+# ${DATE_TIME}: Generates a Timestamp with every execution. Eg. 05-Nov-19:30
+# Read more about buildIdentifiers here -> https://www.browserstack.com/docs/automate/selenium/organize-tests
+buildIdentifier: '#${BUILD_NUMBER}' # Supports strings along with either/both ${expression}
+
+# =======================================
+# Platforms (Browsers / Devices to test)
+# =======================================
+# Platforms object contains all the browser / device combinations you want to test on.
+# Entire list available here -> (https://www.browserstack.com/list-of-browsers-and-platforms/automate)
+platforms:
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
+  - deviceName: Samsung Galaxy S22 Ultra
+    browserName: chrome # Try 'samsung' for Samsung browser
+    osVersion: 12.0
+
+# ==========================================
+# BrowserStack Local
+# (For localhost, staging/private websites)
+# ==========================================
+# Set browserStackLocal to true if your website under test is not accessible publicly over the internet
+# Learn more about how BrowserStack Local works here -> https://www.browserstack.com/docs/automate/selenium/local-testing-introduction
+browserstackLocal: true #  (Default false)
+# browserStackLocalOptions:
+# Options to be passed to BrowserStack local in-case of advanced configurations
+  # localIdentifier: #  (Default: null) Needed if you need to run multiple instances of local.
+  # forceLocal: true  #  (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.
+  # Entire list of arguments available here -> https://www.browserstack.com/docs/automate/selenium/manage-incoming-connections
+
+source: python-browserstack:sample-sdk:v1.0
+
+# ===================
+# Debugging features
+# ===================
+debug: false #  # Set to true if you need screenshots for every selenium command ran
+networkLogs: false #  Set to true to enable HAR logs capturing
+consoleLogs: errors #  Remote browser's console debug levels to be printed (Default: errors)
+# Available options are `disable`, `errors`, `warnings`, `info`, `verbose` (Default: errors)
