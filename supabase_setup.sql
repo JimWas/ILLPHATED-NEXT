@@ -26,3 +26,15 @@ begin;
   -- re-create the publication including the posts table
   create publication supabase_realtime for table public.posts;
 commit;
+
+-- 4. Setup Storage for Board Media
+-- NOTE: You must manually create a bucket named 'board-media' in the Supabase Dashboard first.
+-- Go to Storage -> New Bucket -> Name: 'board-media' -> Public: ON
+
+-- Allow public access to read media
+CREATE POLICY "Allow public read access" ON storage.objects
+    FOR SELECT USING (bucket_id = 'board-media');
+
+-- Allow anonymous uploads (limit to 5MB via component logic, but good to have RLS too)
+CREATE POLICY "Allow anonymous uploads" ON storage.objects
+    FOR INSERT WITH CHECK (bucket_id = 'board-media');
