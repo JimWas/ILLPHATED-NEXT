@@ -27,8 +27,8 @@ export function getAllPostData() {
       const matterResult = matter(fileContents);
 
       return {
-        slug,
         ...matterResult.data,
+        slug,
       } as PostData;
     });
 
@@ -47,8 +47,8 @@ export async function getPostData(slug: string): Promise<PostData> {
   const contentHtml = processedContent.toString();
 
   return {
+    ...matterResult.data,
     slug,
     contentHtml,
-    ...matterResult.data,
   } as PostData;
 }
