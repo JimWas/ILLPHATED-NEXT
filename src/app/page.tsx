@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <main className="flex-1 flex flex-col items-center justify-center p-6 text-center">
-        <div className="max-w-4xl w-full bg-white/90 backdrop-blur-sm border-2 border-nasa-blue p-8 md:p-16 shadow-[20px_20px_0px_0px_rgba(0,51,160,0.1)]">
+        <div className="max-w-4xl w-full bg-white border-2 border-nasa-blue p-8 md:p-16 shadow-[20px_20px_0px_0px_rgba(0,51,160,0.1)]">
           <div className="inline-block px-3 py-1 bg-nasa-red text-white text-xs font-bold mb-6 tracking-widest nasalization">
             EST. 2024 // SYSTEM STATUS: NOMINAL
           </div>

@@ -15,8 +15,8 @@
   --color-nasa-blue: var(--nasa-blue);
   --color-nasa-red: var(--nasa-red);
   --color-command-center: var(--command-center-bg);
-  --font-nasalization: var(--font-nasalization);
-  --font-inter: var(--font-inter);
+  --font-nasalization: var(--font-nasalization), sans-serif;
+  --font-inter: var(--font-inter), sans-serif;
 }
 
 body {
