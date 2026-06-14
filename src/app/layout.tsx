@@ -14,6 +14,7 @@ const nasalization = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.illphated.com"),
   title: "ILLPHATED.COM | NASA COMMAND CENTER",
   description: "The futuristic home of illphated, built with NASA precision.",
 };

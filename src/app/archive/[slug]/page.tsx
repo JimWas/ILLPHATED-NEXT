@@ -13,11 +13,10 @@ export async function generateStaticParams() {
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await props.params;
   const postData = await getPostData(slug);
-  const baseUrl = "https://www.illphated.com";
   
   const title = postData.title || slug;
   const description = postData.excerpt || `Mission Log transmission from illphated.com: ${title}`;
-  const imageUrl = postData.featured_image ? `${baseUrl}${postData.featured_image}` : `${baseUrl}/nasa-og.png`;
+  const imageUrl = postData.featured_image || "/nasa-og.png";
 
   return {
     title: `${title} | ILLPHATED.COM`,
@@ -25,7 +24,7 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/archive/${slug}`,
+      url: `/archive/${slug}`,
       siteName: "ILLPHATED.COM",
       images: [
         {
