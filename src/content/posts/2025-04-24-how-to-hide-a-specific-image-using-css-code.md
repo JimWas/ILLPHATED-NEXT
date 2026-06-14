@@ -16,7 +16,7 @@ featured_image_relative: "2025/04/Screenshot-2025-04-24-at-6.00.53\u202fPM.png"
 hide this image
 
 
-![Image](https://i0.wp.com/illphated.com/wp-content/uploads/2024/12/cropped-illphated_logo-1.png?fit=512%2C512&ssl=1)
+![Image](/media/2024/12/cropped-illphated_logo-1.png?fit=512%2C512&ssl=1)
 
 
 
