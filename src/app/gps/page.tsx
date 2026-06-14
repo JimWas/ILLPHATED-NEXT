@@ -2,22 +2,47 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase";
+
+interface LocationData {
+  latitude: number;
+  longitude: number;
+  device_name: string;
+  created_at: string;
+}
 
 export default function GPSPage() {
-  const [location, setLocation] = useState<{ lat: number; lng: number } | null>(null);
+  const [latest, setLatest] = useState<LocationData | null>(null);
 
   useEffect(() => {
-    // In a real scenario, this would fetch from a database or API
-    // that the mobile app is uploading to.
-    // For now, simulating a live location update.
-    const interval = setInterval(() => {
-      setLocation({
-        lat: 38.8895 + (Math.random() - 0.5) * 0.01,
-        lng: -77.0353 + (Math.random() - 0.5) * 0.01,
-      });
-    }, 5000);
+    const fetchLatest = async () => {
+      const { data, error } = await supabase
+        .from("location_telemetry")
+        .select("*")
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .single();
 
-    return () => clearInterval(interval);
+      if (data) setLatest(data);
+    };
+
+    fetchLatest();
+
+    // Subscribe to new telemetry
+    const channel = supabase
+      .channel("telemetry")
+      .on(
+        "postgres_changes",
+        { event: "INSERT", schema: "public", table: "location_telemetry" },
+        (payload) => {
+          setLatest(payload.new as LocationData);
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(channel);
+    };
   }, []);
 
   return (
@@ -33,20 +58,25 @@ export default function GPSPage() {
         <div className="max-w-4xl w-full bg-white border-2 border-nasa-blue p-8 shadow-[10px_10px_0px_0px_rgba(0,51,160,0.05)]">
           <h2 className="text-2xl text-nasa-blue nasalization mb-6">LIVE_TELEMETRY</h2>
           
-          <div className="w-full h-96 bg-gray-200 border-2 border-gray-300 flex items-center justify-center mb-6">
-            <p className="font-mono text-gray-500">
-              {location 
-                ? `LAT: ${location.lat.toFixed(4)} // LNG: ${location.lng.toFixed(4)}`
-                : "INITIALIZING_LINK..."}
-            </p>
+          <div className="w-full h-96 bg-gray-900 border-2 border-nasa-blue flex items-center justify-center mb-6 text-green-500 font-mono">
+            {latest 
+              ? (
+                <div className="text-center">
+                  <p>DEVICE: {latest.device_name || "UNKNOWN"}</p>
+                  <p className="text-2xl">LAT: {latest.latitude.toFixed(4)}</p>
+                  <p className="text-2xl">LNG: {latest.longitude.toFixed(4)}</p>
+                  <p className="text-xs mt-4">LAST_UPDATE: {new Date(latest.created_at).toLocaleTimeString()}</p>
+                </div>
+              )
+              : <p className="text-red-500">WAITING_FOR_UPLINK...</p>}
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-nasa-blue text-white p-4 font-mono text-xs">
-              STATUS: CONNECTED
+              STATUS: {latest ? "CONNECTED" : "AWAITING_SIGNAL"}
             </div>
             <div className="bg-nasa-red text-white p-4 font-mono text-xs">
-              SIGNAL: OPTIMAL
+              SIGNAL: {latest ? "OPTIMAL" : "CRITICAL"}
             </div>
           </div>
         </div>
