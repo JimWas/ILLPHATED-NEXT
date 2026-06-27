@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
+import { sanitizeBoardHtml } from "@/lib/sanitize";
 
 interface BoardPost {
   id: number;
@@ -119,7 +120,7 @@ export default function BoardFeed({ boardId }: { boardId: string }) {
         <textarea
           value={newPost}
           onChange={(e) => setNewPost(e.target.value)}
-          placeholder="ENTER MESSAGE DATA..."
+          placeholder="ENTER MESSAGE DATA... (PASTE EMBED CODE FROM TWITCH / KICK / YOUTUBE / RUMBLE / VIMEO TO ATTACH STREAMS)"
           className="w-full h-24 p-3 border border-gray-300 font-mono text-sm focus:border-nasa-red outline-none transition-colors mb-4"
         />
         
@@ -178,7 +179,11 @@ export default function BoardFeed({ boardId }: { boardId: string }) {
                 <div className="flex justify-between items-start mb-2">
                   <span className="text-[10px] font-mono text-nasa-red">ID_{post.id} // {new Date(post.created_at).toLocaleString()}</span>
                 </div>
-                <p className="font-mono text-sm whitespace-pre-wrap">{post.content}</p>
+                <div
+                  className="board-content font-mono text-sm whitespace-pre-wrap break-words"
+                  dangerouslySetInnerHTML={{ __html: sanitizeBoardHtml(post.content) }}
+                />
+
               </div>
             </div>
           ))
