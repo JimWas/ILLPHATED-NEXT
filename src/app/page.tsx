@@ -1,5 +1,4 @@
 import Link from "next/link";
-import RumbleEmbed from "@/components/RumbleEmbed";
 
 export default function Home() {
   return (
@@ -33,10 +32,8 @@ export default function Home() {
           <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
             Illphated is a hybrid intelligence platform merging archival digital records with real-time, high-speed human interaction.
           </p>
-
-          <RumbleEmbed />
           
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link 
               href="/archive"
               className="group relative block p-8 border-2 border-nasa-blue hover:bg-nasa-blue hover:text-white transition-all overflow-hidden"
