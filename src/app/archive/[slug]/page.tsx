@@ -1,6 +1,5 @@
 import { getPostData, getAllPostData } from "@/lib/posts";
 import Link from "next/link";
-import Image from "next/image";
 import { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -16,8 +15,6 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
   
   const title = postData.title || slug;
   const description = postData.excerpt || `Mission Log transmission from illphated.com: ${title}`;
-  const imageUrl = postData.featured_image || "/nasa-og.png";
-
   return {
     title: `${title} | ILLPHATED.COM`,
     description,
@@ -26,22 +23,13 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
       description,
       url: `/archive/${slug}`,
       siteName: "ILLPHATED.COM",
-      images: [
-        {
-          url: imageUrl,
-          width: 1200,
-          height: 630,
-          alt: title,
-        },
-      ],
       type: "article",
       publishedTime: postData.date,
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title,
       description,
-      images: [imageUrl],
     },
   };
 }
@@ -74,18 +62,8 @@ export default async function Post(props: { params: Promise<{ slug: string }> })
             </div>
           </div>
 
-          {postData.featured_image && (
-            <div className="w-full border-b-2 border-nasa-blue bg-black flex justify-center overflow-hidden">
-               <img 
-                 src={postData.featured_image} 
-                 alt="" 
-                 className="max-w-full h-auto object-contain"
-               />
-            </div>
-          )}
-
           <div 
-            className="p-8 md:p-12 prose prose-lg max-w-none prose-headings:nasalization prose-headings:text-nasa-blue prose-a:text-nasa-red prose-img:border-2 prose-img:border-nasa-blue"
+            className="p-8 md:p-12 prose prose-lg max-w-none prose-headings:nasalization prose-headings:text-nasa-blue prose-a:text-nasa-red"
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }} 
           />
           

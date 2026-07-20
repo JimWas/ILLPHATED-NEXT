@@ -1,6 +1,5 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@import "leaflet/dist/leaflet.css";
 
 :root {
   --background: #ffffff;
