@@ -3,9 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import dynamic from "next/dynamic";
-
-const Map = dynamic(() => import("@/components/Map"), { ssr: false });
 
 interface LocationData {
   latitude: number;
@@ -19,7 +16,7 @@ export default function GPSPage() {
 
   useEffect(() => {
     const fetchLatest = async () => {
-      const { data, error } = await supabase
+      const { data } = await supabase
         .from("location_telemetry")
         .select("*")
         .order("created_at", { ascending: false })
@@ -61,10 +58,14 @@ export default function GPSPage() {
         <div className="max-w-4xl w-full bg-white border-2 border-nasa-blue p-8 shadow-[10px_10px_0px_0px_rgba(0,51,160,0.05)]">
           <h2 className="text-2xl text-nasa-blue nasalization mb-6">LIVE_TELEMETRY</h2>
           
-          <div className="w-full h-96 bg-gray-900 border-2 border-nasa-blue mb-6">
+          <div className="w-full min-h-64 bg-gray-900 border-2 border-nasa-blue mb-6 p-8 flex items-center justify-center">
             {latest 
               ? (
-                <Map lat={latest.latitude} lng={latest.longitude} />
+                <div className="text-center font-mono text-white space-y-4">
+                  <p className="text-xs text-gray-400">CURRENT_MISSION_COORDINATES</p>
+                  <p className="text-2xl">LAT: {latest.latitude.toFixed(6)}</p>
+                  <p className="text-2xl">LONG: {latest.longitude.toFixed(6)}</p>
+                </div>
               )
               : <div className="h-full flex items-center justify-center text-red-500">WAITING_FOR_UPLINK...</div>}
           </div>

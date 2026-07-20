@@ -13,7 +13,7 @@ export interface PostData {
   contentHtml: string;
   featured_image?: string;
   author?: string;
-  [key: string]: any;
+  excerpt?: string;
 }
 
 export function getAllPostData() {
@@ -44,7 +44,9 @@ export async function getPostData(slug: string): Promise<PostData> {
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
-  const contentHtml = processedContent.toString();
+  const contentHtml = processedContent
+    .toString()
+    .replace(/<img\b[^>]*>/gi, '');
 
   return {
     ...matterResult.data,
