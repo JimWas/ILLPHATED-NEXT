@@ -4,7 +4,10 @@ import Script from "next/script";
 
 declare global {
   interface Window {
-    Rumble?: (action: string, options: { video: string; div: string }) => void;
+    Rumble?: (
+      action: string,
+      options: { video: string; div: string; autoplay: number },
+    ) => void;
   }
 }
 
@@ -13,7 +16,11 @@ const playerId = `rumble_${videoId}`;
 
 export default function RumbleEmbed() {
   const initializePlayer = () => {
-    window.Rumble?.("play", { video: videoId, div: playerId });
+    window.Rumble?.("play", {
+      video: videoId,
+      div: playerId,
+      autoplay: 2,
+    });
   };
 
   return (
