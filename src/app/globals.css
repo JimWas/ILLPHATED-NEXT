@@ -36,3 +36,19 @@ h1, h2, h3, h4, h5, h6, .nasalization {
     linear-gradient(to bottom, #e5e5e5 1px, transparent 1px);
   background-size: 20px 20px;
 }
+
+/* Board post embeds (sanitized HTML / streaming iframes) */
+.board-content iframe {
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 1px solid #e5e5e5;
+  margin-top: 0.5rem;
+  display: block;
+}
+.board-content a {
+  color: #0033a0;
+  text-decoration: underline;
+  word-break: break-all;
+}
