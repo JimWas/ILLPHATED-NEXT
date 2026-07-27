@@ -1,8 +1,61 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getStory } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const story = await getStory(slug);
+
+  if (!story) {
+    return {
+      title: "Story Not Found | ILLPHATED.COM",
+      robots: { index: false, follow: false },
+    };
+  }
+
+  const title = `${story.title} | ILLPHATED.COM`;
+  const description =
+    story.excerpt || `Read “${story.title},” an original short story by Illphated.`;
+  const canonicalUrl = `https://www.illphated.com/stories/${encodeURIComponent(story.slug)}`;
+  const featuredImage = story.cover_url || story.images?.[0] || null;
+  const imageUrl = featuredImage
+    ? new URL(featuredImage, "https://www.illphated.com").toString()
+    : null;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      type: "article",
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "ILLPHATED.COM",
+      publishedTime: story.created_at,
+      modifiedTime: story.updated_at,
+      authors: ["Illphated"],
+      images: imageUrl
+        ? [{ url: imageUrl, alt: `Featured image for ${story.title}` }]
+        : [],
+    },
+    twitter: {
+      card: imageUrl ? "summary_large_image" : "summary",
+      site: "@illphated336",
+      creator: "@illphated336",
+      title,
+      description,
+      images: imageUrl ? [imageUrl] : [],
+    },
+  };
+}
 
 export default async function StoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

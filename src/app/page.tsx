@@ -3,6 +3,15 @@ import { getFeaturedStory } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
 
+const socialLinks = [
+  { label: "YouTube", handle: "@illphated", href: "https://www.youtube.com/@illphated", mark: "YT" },
+  { label: "Rumble", handle: "Illphated", href: "https://rumble.com/user/Illphated", mark: "R" },
+  { label: "X", handle: "@illphated336", href: "https://x.com/illphated336", mark: "X" },
+  { label: "Truth Social", handle: "@Illphated", href: "https://truthsocial.com/@Illphated", mark: "TS" },
+  { label: "Instagram", handle: "@illphated", href: "https://www.instagram.com/illphated/", mark: "IG" },
+  { label: "Twitch", handle: "strykerusa", href: "https://www.twitch.tv/strykerusa", mark: "TV" },
+];
+
 export default async function Home() {
   const featured = await getFeaturedStory();
 
@@ -28,25 +37,57 @@ export default async function Home() {
           {featured?.cover_url && <img src={featured.cover_url} alt="" className="story-hero-image" />}
           <div className="story-hero-overlay" />
           <div className="story-hero-content">
-            <div className="story-kicker"><span /> NEW TRANSMISSION // SHORT FICTION</div>
-            <h2 id="story-hero-title">{featured?.title ?? "STORIES FROM THE EDGE OF THE SIGNAL"}</h2>
-            <p>
-              {featured?.excerpt ??
-                "Original short fiction by Illphated—written to be read in the dark, and recorded for the long way home."}
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Link href={featured ? `/stories/${featured.slug}` : "/stories"} className="story-primary-action">
-                {featured ? "READ FEATURED STORY" : "ENTER THE STORY ARCHIVE"} <span aria-hidden="true">→</span>
-              </Link>
+            <div className="story-hero-copy">
+              <div className="story-kicker"><span /> NEW TRANSMISSION // SHORT FICTION</div>
+              <h2 id="story-hero-title">{featured?.title ?? "STORIES FROM THE EDGE OF THE SIGNAL"}</h2>
+              <p>
+                {featured?.excerpt ??
+                  "Original short fiction by Illphated—written to be read in the dark, and recorded for the long way home."}
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Link href={featured ? `/stories/${featured.slug}` : "/stories"} className="story-primary-action">
+                  {featured ? "READ FEATURED STORY" : "ENTER THE STORY ARCHIVE"} <span aria-hidden="true">→</span>
+                </Link>
+                {featured?.audio_url && (
+                  <a href="#featured-audio" className="story-secondary-action">LISTEN TO AUDIOBOOK</a>
+                )}
+              </div>
               {featured?.audio_url && (
-                <a href="#featured-audio" className="story-secondary-action">LISTEN TO AUDIOBOOK</a>
+                <audio id="featured-audio" controls preload="metadata" className="mt-6 w-full max-w-xl">
+                  <source src={featured.audio_url} />
+                </audio>
               )}
             </div>
-            {featured?.audio_url && (
-              <audio id="featured-audio" controls preload="metadata" className="mt-6 w-full max-w-xl">
-                <source src={featured.audio_url} />
-              </audio>
-            )}
+
+            <aside className="social-uplink" aria-labelledby="social-uplink-title">
+              <div className="social-uplink-profile">
+                <div className="social-uplink-photo-wrap">
+                  <img src="/illphated-profile.jpg" alt="Illphated" className="social-uplink-photo" />
+                  <span className="social-uplink-live">ACTIVE</span>
+                </div>
+                <div>
+                  <p className="font-mono text-[9px] tracking-[.2em] text-white/45">CREATOR SIGNAL</p>
+                  <h3 id="social-uplink-title">FIND ILLPHATED</h3>
+                  <p>Follow the active transmissions.</p>
+                </div>
+              </div>
+              <div className="social-uplink-grid">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.label}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-uplink-link"
+                    aria-label={`Follow Illphated on ${social.label} (opens in a new tab)`}
+                  >
+                    <span className="social-uplink-mark" aria-hidden="true">{social.mark}</span>
+                    <span><b>{social.label}</b><small>{social.handle}</small></span>
+                    <i aria-hidden="true">↗</i>
+                  </a>
+                ))}
+              </div>
+            </aside>
           </div>
           <div className="story-hero-index" aria-hidden="true">FILE // 001</div>
         </section>
