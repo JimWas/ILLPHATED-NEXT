@@ -1,85 +1,84 @@
 import Link from "next/link";
+import { getFeaturedStory } from "@/lib/stories";
 
-export default function Home() {
+export const dynamic = "force-dynamic";
+
+export default async function Home() {
+  const featured = await getFeaturedStory();
+
   return (
-    <div className="flex flex-col min-h-screen command-grid">
-      {/* Top Navigation Bar (Command Strip) */}
-      <header className="bg-nasa-blue text-white py-4 px-6 md:px-12 flex justify-between items-center shadow-lg border-b-4 border-nasa-red">
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-1">
-             {/* NASA-style placeholder icon */}
-             <div className="w-full h-full border-4 border-nasa-blue rounded-full flex items-center justify-center font-bold text-nasa-blue text-xs">NASA</div>
+    <div className="flex min-h-screen flex-col command-grid">
+      <header className="flex items-center justify-between border-b-4 border-nasa-red bg-nasa-blue px-6 py-4 text-white shadow-lg md:px-12">
+        <Link href="/" className="flex items-center gap-4">
+          <div className="grid h-12 w-12 place-items-center rounded-full bg-white p-1" aria-hidden="true">
+            <div className="grid h-full w-full place-items-center rounded-full border-4 border-nasa-blue text-[9px] font-bold text-nasa-blue">IP</div>
           </div>
-          <h1 className="text-2xl md:text-4xl tracking-widest nasalization">ILLPHATED.COM</h1>
-        </div>
-        <nav className="hidden md:flex gap-8 text-sm tracking-widest nasalization">
-          <Link href="/archive" className="hover:text-nasa-red transition-colors">ARCHIVES</Link>
-          <Link href="/boards" className="hover:text-nasa-red transition-colors">BOARDS</Link>
-          <Link href="/mission" className="hover:text-nasa-red transition-colors">MISSION</Link>
+          <h1 className="text-xl tracking-widest md:text-4xl">ILLPHATED.COM</h1>
+        </Link>
+        <nav className="hidden gap-8 text-sm tracking-widest md:flex nasalization" aria-label="Primary navigation">
+          <Link href="/stories" className="hover:text-nasa-red">STORIES</Link>
+          <Link href="/archive" className="hover:text-nasa-red">ARCHIVES</Link>
+          <Link href="/boards" className="hover:text-nasa-red">BOARDS</Link>
+          <Link href="/gps" className="hover:text-nasa-red">TRACKER</Link>
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <main className="flex-1 flex flex-col items-center justify-center p-6 text-center">
-        <div className="max-w-4xl w-full bg-white border-2 border-nasa-blue p-8 md:p-16 shadow-[20px_20px_0px_0px_rgba(0,51,160,0.1)]">
-          <div className="inline-block px-3 py-1 bg-nasa-red text-white text-xs font-bold mb-6 tracking-widest nasalization">
-            EST. 2024 // SYSTEM STATUS: NOMINAL
+      <main className="flex-1">
+        <section className="story-hero" aria-labelledby="story-hero-title">
+          {featured?.cover_url && <img src={featured.cover_url} alt="" className="story-hero-image" />}
+          <div className="story-hero-overlay" />
+          <div className="story-hero-content">
+            <div className="story-kicker"><span /> NEW TRANSMISSION // SHORT FICTION</div>
+            <h2 id="story-hero-title">{featured?.title ?? "STORIES FROM THE EDGE OF THE SIGNAL"}</h2>
+            <p>
+              {featured?.excerpt ??
+                "Original short fiction by Illphated—written to be read in the dark, and recorded for the long way home."}
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link href={featured ? `/stories/${featured.slug}` : "/stories"} className="story-primary-action">
+                {featured ? "READ FEATURED STORY" : "ENTER THE STORY ARCHIVE"} <span aria-hidden="true">→</span>
+              </Link>
+              {featured?.audio_url && (
+                <a href="#featured-audio" className="story-secondary-action">LISTEN TO AUDIOBOOK</a>
+              )}
+            </div>
+            {featured?.audio_url && (
+              <audio id="featured-audio" controls preload="metadata" className="mt-6 w-full max-w-xl">
+                <source src={featured.audio_url} />
+              </audio>
+            )}
           </div>
-          <h2 className="text-4xl md:text-6xl text-nasa-blue mb-8 leading-tight">
-            THE NEXT GENERATION OF <br />
-            <span className="text-nasa-red">DIGITAL EXPLORATION</span>
-          </h2>
-          <p className="text-lg md:text-xl text-gray-700 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Illphated is a hybrid intelligence platform merging archival digital records with real-time, high-speed human interaction.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Link 
-              href="/archive"
-              className="group relative block p-8 border-2 border-nasa-blue hover:bg-nasa-blue hover:text-white transition-all overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30">
-                <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-              </div>
-              <h3 className="text-2xl nasalization mb-2">ACCESS ARCHIVES</h3>
-              <p className="text-sm opacity-80 uppercase tracking-tighter font-bold">1,000+ Records Decrypted</p>
-            </Link>
+          <div className="story-hero-index" aria-hidden="true">FILE // 001</div>
+        </section>
 
-            <Link 
-              href="/boards"
-              className="group relative block p-8 border-2 border-nasa-red hover:bg-nasa-red hover:text-white transition-all overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30">
-                <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
-              </div>
-              <h3 className="text-2xl nasalization mb-2">OPERATIONS BOARD</h3>
-              <p className="text-sm opacity-80 uppercase tracking-tighter font-bold">Real-time Feed Active</p>
-            </Link>
-
-            <Link 
-              href="/gps"
-              className="group relative block p-8 border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-all overflow-hidden"
-            >
-              <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-30">
-                <svg className="w-24 h-24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              </div>
-              <h3 className="text-2xl nasalization mb-2">MISSION_TRACKER</h3>
-              <p className="text-sm opacity-80 uppercase tracking-tighter font-bold">Live GPS Telemetry</p>
-            </Link>
+        <section className="mx-auto max-w-6xl px-6 py-16 md:px-12">
+          <div className="mb-8 flex items-end justify-between border-b-2 border-nasa-blue pb-4">
+            <div>
+              <p className="font-mono text-xs font-bold text-nasa-red">COMMAND DIRECTORY</p>
+              <h2 className="mt-2 text-3xl text-nasa-blue">CONTINUE EXPLORATION</h2>
+            </div>
+            <Link href="/admin/stories" className="text-[10px] font-mono text-gray-400 hover:text-nasa-blue">AUTHOR ACCESS</Link>
           </div>
-        </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {[
+              ["/stories", "SHORT STORIES", "Read and listen to original transmissions."],
+              ["/archive", "MISSION ARCHIVES", "Access the complete record."],
+              ["/boards", "OPERATIONS BOARD", "Enter the real-time feed."],
+            ].map(([href, title, description]) => (
+              <Link key={href} href={href} className="group border border-gray-300 bg-white p-6 transition hover:-translate-y-1 hover:border-nasa-blue hover:shadow-xl">
+                <p className="mb-8 font-mono text-[10px] text-nasa-red">UPLINK AVAILABLE</p>
+                <h3 className="text-xl text-nasa-blue">{title}</h3>
+                <p className="mt-2 text-sm text-gray-600">{description}</p>
+                <span className="mt-6 block text-right text-nasa-blue group-hover:text-nasa-red">→</span>
+              </Link>
+            ))}
+          </div>
+        </section>
       </main>
 
-      {/* Footer Status Bar */}
-      <footer className="bg-gray-100 border-t-2 border-gray-300 py-3 px-6 flex justify-between items-center text-[10px] md:text-xs font-mono tracking-widest text-gray-500 uppercase">
-        <div className="flex gap-6">
-          <span>LAT: 38.8895° N // LONG: 77.0353° W</span>
-          <span className="hidden sm:inline">UPLINK: ACTIVE [GITHUB-VERCEL]</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-          <span>ALL SYSTEMS GO</span>
-        </div>
+      <footer className="flex items-center justify-between border-t-2 border-gray-300 bg-gray-100 px-6 py-3 font-mono text-[10px] uppercase tracking-widest text-gray-500">
+        <span>ORIGINAL FICTION // AUDIO ENABLED</span>
+        <span className="flex items-center gap-2"><i className="h-2 w-2 animate-pulse rounded-full bg-green-500" /> ALL SYSTEMS GO</span>
       </footer>
     </div>
   );
