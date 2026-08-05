@@ -4,7 +4,7 @@ import { FormEvent, useEffect, useState } from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import type { Session } from "@supabase/supabase-js";
-import type { Story } from "@/lib/stories";
+import { isStoryVideo, type Story } from "@/lib/stories";
 
 type Draft = Pick<Story, "title" | "slug" | "excerpt" | "body" | "cover_url" | "audio_url" | "images" | "featured" | "published">;
 const blankDraft: Draft = { title: "", slug: "", excerpt: "", body: "", cover_url: null, audio_url: null, images: [], featured: false, published: false };
@@ -53,7 +53,16 @@ export default function StoryStudio() {
     }));
   }
 
-  async function upload(file: File, kind: "cover" | "audio" | "gallery") {
+  async function upload(file: File, kind: "cover" | "audio" | "gallery" | "video") {
+    if (kind === "video" && file.type !== "video/mp4" && !file.name.toLowerCase().endsWith(".mp4")) {
+      setMessage("SHORT VIDEO MUST BE AN MP4 FILE");
+      return;
+    }
+    if (kind === "video" && file.size > 20 * 1024 * 1024) {
+      setMessage("SHORT VIDEO EXCEEDS THE 20 MB LIMIT");
+      return;
+    }
+
     setBusy(true);
     setMessage(`UPLOADING ${file.name}…`);
     const safeName = file.name.toLowerCase().replace(/[^a-z0-9.]+/g, "-");
@@ -65,7 +74,7 @@ export default function StoryStudio() {
       const { data } = supabase.storage.from("story-media").getPublicUrl(path);
       if (kind === "cover") update("cover_url", data.publicUrl);
       if (kind === "audio") update("audio_url", data.publicUrl);
-      if (kind === "gallery") update("images", [...draft.images, data.publicUrl]);
+      if (kind === "gallery" || kind === "video") update("images", [...draft.images, data.publicUrl]);
       setMessage("UPLOAD COMPLETE");
     }
     setBusy(false);
@@ -141,12 +150,13 @@ export default function StoryStudio() {
             <label className="studio-label">SHORT DESCRIPTION<input value={draft.excerpt} onChange={(e) => update("excerpt", e.target.value)} maxLength={240} placeholder="A one-sentence hook for readers." /></label>
             <label className="studio-label md:col-span-2">STORY TEXT<textarea value={draft.body} onChange={(e) => update("body", e.target.value)} rows={20} required placeholder="Paste or write your story here. Leave a blank line between paragraphs." /></label>
           </div>
-          <div className="mt-8 grid gap-5 border-t pt-8 md:grid-cols-3">
+          <div className="mt-8 grid gap-5 border-t pt-8 md:grid-cols-2 xl:grid-cols-4">
             <FileField label="COVER IMAGE" accept="image/*" current={draft.cover_url} onFile={(file) => upload(file, "cover")} />
             <FileField label="AUDIOBOOK FILE" accept="audio/*,.mp3,.m4a,.wav,.aac,.ogg" current={draft.audio_url} onFile={(file) => upload(file, "audio")} />
             <FileField label="STORY GALLERY" accept="image/*" current={draft.images.length ? `${draft.images.length} image(s)` : null} onFile={(file) => upload(file, "gallery")} />
+            <FileField label="SHORT MP4 (MAX 20 MB)" accept="video/mp4,.mp4" current={draft.images.some(isStoryVideo) ? "VIDEO ATTACHED" : null} onFile={(file) => upload(file, "video")} />
           </div>
-          {draft.images.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{draft.images.map((url, index) => <button type="button" key={url} onClick={() => update("images", draft.images.filter((item) => item !== url))} className="bg-gray-100 px-3 py-2 text-xs">IMAGE {index + 1} ×</button>)}</div>}
+          {draft.images.length > 0 && <div className="mt-4 flex flex-wrap gap-2">{draft.images.map((url, index) => <button type="button" key={url} onClick={() => update("images", draft.images.filter((item) => item !== url))} className="bg-gray-100 px-3 py-2 text-xs">{isStoryVideo(url) ? "VIDEO" : "IMAGE"} {index + 1} ×</button>)}</div>}
           <div className="mt-8 flex flex-wrap items-center gap-6 border-t pt-6">
             <label className="studio-check"><input type="checkbox" checked={draft.published} onChange={(e) => update("published", e.target.checked)} /> PUBLISH NOW</label>
             <label className="studio-check"><input type="checkbox" checked={draft.featured} onChange={(e) => update("featured", e.target.checked)} /> FEATURE ON HOMEPAGE</label>

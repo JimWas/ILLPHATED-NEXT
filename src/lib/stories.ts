@@ -15,6 +15,10 @@ export type Story = {
   updated_at: string;
 };
 
+export function isStoryVideo(url: string): boolean {
+  return /\.mp4(?:$|[?#])/i.test(url);
+}
+
 export async function getFeaturedStory(): Promise<Story | null> {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) return null;
   const { data } = await supabase

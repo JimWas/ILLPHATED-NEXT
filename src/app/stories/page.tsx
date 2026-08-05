@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getPublishedStories } from "@/lib/stories";
+import { getPublishedStories, isStoryVideo } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
 export const metadata = { title: "SHORT STORIES | ILLPHATED.COM" };
@@ -20,11 +20,12 @@ export default async function StoriesPage() {
         </div>
         {stories.length ? (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {stories.map((story) => (
-              <Link href={`/stories/${story.slug}`} key={story.id} className="story-card group">
+            {stories.map((story) => {
+              const mediaLabels = [story.audio_url && "● AUDIO", story.images.some(isStoryVideo) && "● VIDEO"].filter(Boolean);
+              return <Link href={`/stories/${story.slug}`} key={story.id} className="story-card group">
                 <div className="story-card-image">
                   {story.cover_url ? <img src={story.cover_url} alt="" /> : <span>NO VISUAL SIGNAL</span>}
-                  {story.audio_url && <b>● AUDIOBOOK</b>}
+                  {mediaLabels.length > 0 && <b>{mediaLabels.join(" / ")}</b>}
                 </div>
                 <div className="p-6">
                   <p className="font-mono text-[10px] text-nasa-red">{new Date(story.created_at).toLocaleDateString()}</p>
@@ -32,8 +33,8 @@ export default async function StoriesPage() {
                   <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">{story.excerpt}</p>
                   <span className="mt-6 block text-xs font-bold text-nasa-blue">OPEN TRANSMISSION →</span>
                 </div>
-              </Link>
-            ))}
+              </Link>;
+            })}
           </div>
         ) : (
           <div className="border-2 border-dashed border-gray-300 bg-white p-12 text-center">
