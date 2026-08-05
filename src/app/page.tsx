@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getFeaturedStory } from "@/lib/stories";
+import { getFeaturedStory, isStoryVideo } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +14,7 @@ const socialLinks = [
 
 export default async function Home() {
   const featured = await getFeaturedStory();
+  const featuredVideo = featured?.images.find(isStoryVideo) ?? null;
 
   return (
     <div className="flex min-h-screen flex-col command-grid">
@@ -51,11 +52,20 @@ export default async function Home() {
                 {featured?.audio_url && (
                   <a href="#featured-audio" className="story-secondary-action">LISTEN TO AUDIOBOOK</a>
                 )}
+                {featuredVideo && (
+                  <a href="#featured-video" className="story-secondary-action">WATCH SHORT VIDEO</a>
+                )}
               </div>
               {featured?.audio_url && (
                 <audio id="featured-audio" controls preload="metadata" className="mt-6 w-full max-w-xl">
                   <source src={featured.audio_url} />
                 </audio>
+              )}
+              {featuredVideo && (
+                <video id="featured-video" controls preload="none" playsInline className="mt-6 aspect-video w-full max-w-xl bg-black">
+                  <source src={featuredVideo} type="video/mp4" />
+                  Your browser does not support MP4 video playback.
+                </video>
               )}
             </div>
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getStory } from "@/lib/stories";
+import { getStory, isStoryVideo } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
 
@@ -89,7 +89,14 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
           </div>
           {story.images?.length > 0 && (
             <div className="mt-16 grid gap-6">
-              {story.images.map((image, index) => <img key={image} src={image} alt={`${story.title} illustration ${index + 1}`} className="w-full border border-white/20" />)}
+              {story.images.map((media, index) => isStoryVideo(media) ? (
+                <video key={media} controls preload="none" playsInline className="aspect-video w-full border border-white/20 bg-black">
+                  <source src={media} type="video/mp4" />
+                  Your browser does not support MP4 video playback.
+                </video>
+              ) : (
+                <img key={media} src={media} alt={`${story.title} illustration ${index + 1}`} className="w-full border border-white/20" />
+              ))}
             </div>
           )}
           <div className="mt-16 border-t border-white/20 pt-8 text-center">
