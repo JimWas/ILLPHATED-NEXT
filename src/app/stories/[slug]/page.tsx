@@ -90,8 +90,16 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
           {story.images?.length > 0 && (
             <div className="mt-16 grid gap-6">
               {story.images.map((media, index) => isStoryVideo(media) ? (
-                <video key={media} controls preload="none" playsInline className="aspect-video w-full border border-white/20 bg-black">
-                  <source src={media} type="video/mp4" />
+                <video
+                  key={media}
+                  src={media}
+                  poster={story.cover_url ?? undefined}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  aria-label={`Video for ${story.title}`}
+                  className="aspect-video w-full border border-white/20 bg-black object-contain"
+                >
                   Your browser does not support MP4 video playback.
                 </video>
               ) : (

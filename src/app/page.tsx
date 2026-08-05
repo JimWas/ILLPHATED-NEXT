@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getFeaturedStory, isStoryVideo } from "@/lib/stories";
+import { getFeaturedStory, getLatestStories, isStoryVideo } from "@/lib/stories";
 
 export const dynamic = "force-dynamic";
 
@@ -13,8 +13,14 @@ const socialLinks = [
 ];
 
 export default async function Home() {
-  const featured = await getFeaturedStory();
+  const [featured, recentStories] = await Promise.all([
+    getFeaturedStory(),
+    getLatestStories(4),
+  ]);
   const featuredVideo = featured?.images.find(isStoryVideo) ?? null;
+  const latestStories = recentStories
+    .filter((story) => story.id !== featured?.id)
+    .slice(0, 3);
 
   return (
     <div className="flex min-h-screen flex-col command-grid">
@@ -62,8 +68,16 @@ export default async function Home() {
                 </audio>
               )}
               {featuredVideo && (
-                <video id="featured-video" controls preload="none" playsInline className="mt-6 aspect-video w-full max-w-xl bg-black">
-                  <source src={featuredVideo} type="video/mp4" />
+                <video
+                  id="featured-video"
+                  src={featuredVideo}
+                  poster={featured?.cover_url ?? undefined}
+                  controls
+                  preload="metadata"
+                  playsInline
+                  aria-label={`Video for ${featured?.title ?? "featured story"}`}
+                  className="mt-6 aspect-video w-full max-w-xl bg-black object-contain"
+                >
                   Your browser does not support MP4 video playback.
                 </video>
               )}
@@ -101,6 +115,31 @@ export default async function Home() {
           </div>
           <div className="story-hero-index" aria-hidden="true">FILE // 001</div>
         </section>
+
+        {latestStories.length > 0 && (
+          <section className="mx-auto max-w-6xl px-6 pt-16 md:px-12" aria-labelledby="latest-stories-title">
+            <div className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b-2 border-nasa-red pb-4">
+              <div>
+                <p className="font-mono text-xs font-bold text-nasa-red">RECENT TRANSMISSIONS</p>
+                <h2 id="latest-stories-title" className="mt-2 text-3xl text-nasa-blue">LATEST SHORT STORIES</h2>
+              </div>
+              <Link href="/stories" className="font-mono text-xs font-bold text-nasa-blue hover:text-nasa-red">VIEW ALL STORIES →</Link>
+            </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {latestStories.map((story, index) => (
+                <Link key={story.id} href={`/stories/${story.slug}`} className="group flex min-h-64 flex-col border border-gray-300 bg-white p-6 transition hover:-translate-y-1 hover:border-nasa-blue hover:shadow-xl">
+                  <div className="flex items-center justify-between font-mono text-[10px] text-gray-400">
+                    <span>FILE // {String(index + 2).padStart(3, "0")}</span>
+                    <span>{new Date(story.created_at).toLocaleDateString()}</span>
+                  </div>
+                  <h3 className="mt-8 text-2xl leading-tight text-nasa-blue group-hover:text-nasa-red">{story.title}</h3>
+                  <p className="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">{story.excerpt}</p>
+                  <span className="mt-auto pt-8 text-right text-sm font-bold text-nasa-blue group-hover:text-nasa-red">READ TRANSMISSION →</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="mx-auto max-w-6xl px-6 py-16 md:px-12">
           <div className="mb-8 flex items-end justify-between border-b-2 border-nasa-blue pb-4">

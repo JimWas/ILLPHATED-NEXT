@@ -42,6 +42,17 @@ export async function getPublishedStories(): Promise<Story[]> {
   return (data ?? []) as Story[];
 }
 
+export async function getLatestStories(limit = 3): Promise<Story[]> {
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) return [];
+  const { data } = await supabase
+    .from("stories")
+    .select("*")
+    .eq("published", true)
+    .order("created_at", { ascending: false })
+    .limit(limit);
+  return (data ?? []) as Story[];
+}
+
 export async function getStory(slug: string): Promise<Story | null> {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) return null;
   const { data } = await supabase
