@@ -41,8 +41,11 @@ export type ForumAttachment = {
 export const FALLBACK_BOARDS: ForumBoard[] = [
   { id: "", slug: "b", title: "RANDOM", description: "SYSTEM_LEVEL_CHAOS", is_private: false, sort_order: 10 },
   { id: "", slug: "tech", title: "TECHNOLOGY", description: "HARDWARE_SOFTWARE_OPERATIONS", is_private: false, sort_order: 20 },
-  { id: "", slug: "nasa", title: "AEROSPACE", description: "MISSION_CONTROL_AND_FLIGHT", is_private: false, sort_order: 30 },
-  { id: "", slug: "v", title: "VIDEO_GAMES", description: "VIRTUAL_SIMULATION_LOGS", is_private: false, sort_order: 40 },
+  { id: "", slug: "dev", title: "DEVELOPMENT", description: "CODE_BUILDS_AUTOMATION_OPEN_SOURCE", is_private: false, sort_order: 30 },
+  { id: "", slug: "ai", title: "ARTIFICIAL_INTELLIGENCE", description: "MODELS_AGENTS_TOOLS_GENERATIVE_MEDIA", is_private: false, sort_order: 40 },
+  { id: "", slug: "nasa", title: "AEROSPACE", description: "MISSION_CONTROL_AND_FLIGHT", is_private: false, sort_order: 50 },
+  { id: "", slug: "v", title: "VIDEO_GAMES", description: "VIRTUAL_SIMULATION_LOGS", is_private: false, sort_order: 60 },
+  { id: "", slug: "meta", title: "SITE_OPERATIONS", description: "ANNOUNCEMENTS_RULES_FEEDBACK", is_private: false, sort_order: 70 },
   { id: "", slug: "releases", title: "PRIVATE SOFTWARE RELEASES", description: "MEMBERS_ONLY_DOWNLOAD_VAULT", is_private: true, sort_order: 100 },
 ];
 

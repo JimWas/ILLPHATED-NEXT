@@ -86,8 +86,11 @@ create index forum_attachments_post_idx on public.forum_attachments(post_id);
 insert into public.forum_boards (slug, title, description, is_private, sort_order) values
   ('b', 'RANDOM', 'SYSTEM_LEVEL_CHAOS', false, 10),
   ('tech', 'TECHNOLOGY', 'HARDWARE_SOFTWARE_OPERATIONS', false, 20),
-  ('nasa', 'AEROSPACE', 'MISSION_CONTROL_AND_FLIGHT', false, 30),
-  ('v', 'VIDEO_GAMES', 'VIRTUAL_SIMULATION_LOGS', false, 40),
+  ('dev', 'DEVELOPMENT', 'CODE_BUILDS_AUTOMATION_OPEN_SOURCE', false, 30),
+  ('ai', 'ARTIFICIAL_INTELLIGENCE', 'MODELS_AGENTS_TOOLS_GENERATIVE_MEDIA', false, 40),
+  ('nasa', 'AEROSPACE', 'MISSION_CONTROL_AND_FLIGHT', false, 50),
+  ('v', 'VIDEO_GAMES', 'VIRTUAL_SIMULATION_LOGS', false, 60),
+  ('meta', 'SITE_OPERATIONS', 'ANNOUNCEMENTS_RULES_FEEDBACK', false, 70),
   ('releases', 'PRIVATE SOFTWARE RELEASES', 'MEMBERS_ONLY_DOWNLOAD_VAULT', true, 100)
 on conflict (slug) do update set
   title = excluded.title,
