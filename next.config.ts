@@ -1,6 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: "/forum", destination: "/boards", permanent: true },
+      { source: "/forum/:path*", destination: "/boards/:path*", permanent: true },
+      { source: "/community", destination: "/boards", permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
