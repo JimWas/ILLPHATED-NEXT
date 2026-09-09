@@ -1,0 +1,19 @@
+{
+  "source": "phpbb",
+  "topics": [
+    {
+      "legacy_id": "42",
+      "legacy_url_ids": ["42"],
+      "board_slug": "tech",
+      "title": "Example recovered topic",
+      "posts": [
+        {
+          "legacy_id": "100",
+          "author_name": "RecoveredUser",
+          "body": "Recovered message body.",
+          "created_at": "2020-01-01T12:00:00Z"
+        }
+      ]
+    }
+  ]
+}
