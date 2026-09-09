@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
 import type { User } from "@supabase/supabase-js";
-import { FALLBACK_BOARDS, formatForumDate, forumIsConfigured, type ForumBoard, type ForumThreadSummary } from "@/lib/forum";
+import { createForumImageUrls, isImageAttachment } from "@/lib/forum-attachments";
+import { FALLBACK_BOARDS, formatForumDate, forumIsConfigured, type ForumAttachment, type ForumBoard, type ForumThreadSummary } from "@/lib/forum";
 import { supabase } from "@/lib/supabase";
 
 type CreatedThread = { thread_id: string; thread_slug: string; post_id: string };
@@ -13,6 +14,7 @@ export default function ForumBoardView({ boardSlug }: { boardSlug: string }) {
   const router = useRouter();
   const [board, setBoard] = useState<ForumBoard | null>(null);
   const [threads, setThreads] = useState<ForumThreadSummary[]>([]);
+  const [threadImageUrls, setThreadImageUrls] = useState<Record<string, string>>({});
   const [user, setUser] = useState<User | null>(null);
   const [canCreate, setCanCreate] = useState(false);
   const [title, setTitle] = useState("");
@@ -76,7 +78,34 @@ export default function ForumBoardView({ boardSlug }: { boardSlug: string }) {
       .order("is_pinned", { ascending: false })
       .order("last_post_at", { ascending: false });
     if (threadError) setMessage(threadError.message.toUpperCase());
-    setThreads((threadData ?? []) as unknown as ForumThreadSummary[]);
+    const resolvedThreads = (threadData ?? []) as unknown as ForumThreadSummary[];
+    setThreads(resolvedThreads);
+
+    const threadIds = resolvedThreads.map((thread) => thread.id);
+    if (threadIds.length) {
+      const { data: postData } = await supabase
+        .from("forum_posts")
+        .select("thread_id, attachments:forum_attachments(id, file_name, mime_type, size_bytes, storage_path)")
+        .in("thread_id", threadIds)
+        .order("created_at");
+
+      const firstImages = new Map<string, ForumAttachment>();
+      for (const post of postData ?? []) {
+        if (firstImages.has(post.thread_id)) continue;
+        const image = (post.attachments as ForumAttachment[] | null)?.find(isImageAttachment);
+        if (image) firstImages.set(post.thread_id, image);
+      }
+      const urlsByAttachment = await createForumImageUrls([...firstImages.values()]);
+      setThreadImageUrls(
+        Object.fromEntries(
+          [...firstImages].flatMap(([threadId, attachment]) =>
+            urlsByAttachment[attachment.id] ? [[threadId, urlsByAttachment[attachment.id]]] : [],
+          ),
+        ),
+      );
+    } else {
+      setThreadImageUrls({});
+    }
     setLoading(false);
   }, [boardSlug]);
 
@@ -187,13 +216,20 @@ export default function ForumBoardView({ boardSlug }: { boardSlug: string }) {
         {!loading && threads.length === 0 ? <p className="forum-empty">NO TOPICS IN THIS CHANNEL</p> : null}
         {threads.map((thread) => (
           <Link href={`/boards/${boardSlug}/${thread.slug}`} key={thread.id} className="forum-thread-row group">
-            <div>
-              <div className="flex items-center gap-2">
-                {thread.is_pinned ? <span className="forum-tag">PINNED</span> : null}
-                {thread.is_locked ? <span className="forum-tag">LOCKED</span> : null}
+            <div className="forum-thread-summary">
+              {threadImageUrls[thread.id] ? (
+                // Signed storage URLs are already authorized and are intentionally rendered without image proxying.
+                // eslint-disable-next-line @next/next/no-img-element
+                <img className="forum-thread-thumbnail" src={threadImageUrls[thread.id]} alt="" loading="lazy" />
+              ) : null}
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  {thread.is_pinned ? <span className="forum-tag">PINNED</span> : null}
+                  {thread.is_locked ? <span className="forum-tag">LOCKED</span> : null}
+                </div>
+                <h2 className="font-bold text-nasa-blue group-hover:text-nasa-red mt-1 break-words">{thread.title}</h2>
+                <p className="text-[10px] font-mono text-gray-500 mt-1">BY {thread.author?.username ?? thread.legacy_author_name ?? "ARCHIVED_USER"}</p>
               </div>
-              <h2 className="font-bold text-nasa-blue group-hover:text-nasa-red mt-1">{thread.title}</h2>
-              <p className="text-[10px] font-mono text-gray-500 mt-1">BY {thread.author?.username ?? thread.legacy_author_name ?? "ARCHIVED_USER"}</p>
             </div>
             <span className="hidden md:block font-mono text-sm">{thread.reply_count}</span>
             <span className="hidden md:block font-mono text-xs text-gray-500">{formatForumDate(thread.last_post_at)}</span>

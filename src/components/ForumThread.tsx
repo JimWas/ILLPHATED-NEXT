@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import type { User } from "@supabase/supabase-js";
+import { createForumImageUrls, isImageAttachment } from "@/lib/forum-attachments";
 import { formatFileSize, formatForumDate, forumIsConfigured, type ForumAttachment, type ForumBoard, type ForumPost } from "@/lib/forum";
 import { supabase } from "@/lib/supabase";
 
@@ -19,6 +20,7 @@ export default function ForumThreadView({ boardSlug, threadSlug }: { boardSlug: 
   const [board, setBoard] = useState<ForumBoard | null>(null);
   const [thread, setThread] = useState<ThreadRecord | null>(null);
   const [posts, setPosts] = useState<ForumPost[]>([]);
+  const [imageUrls, setImageUrls] = useState<Record<string, string>>({});
   const [user, setUser] = useState<User | null>(null);
   const [canAttach, setCanAttach] = useState(false);
   const [body, setBody] = useState("");
@@ -83,7 +85,9 @@ export default function ForumThreadView({ boardSlug, threadSlug }: { boardSlug: 
       .order("created_at");
     if (postError) setMessage(postError.message.toUpperCase());
     else setMessage("");
-    setPosts((postData ?? []) as unknown as ForumPost[]);
+    const resolvedPosts = (postData ?? []) as unknown as ForumPost[];
+    setPosts(resolvedPosts);
+    setImageUrls(await createForumImageUrls(resolvedPosts.flatMap((post) => post.attachments ?? [])));
     setLoading(false);
   }, [boardSlug, threadSlug]);
 
@@ -198,6 +202,25 @@ export default function ForumThreadView({ boardSlug, threadSlug }: { boardSlug: 
             <div className="min-w-0">
               <p className="text-[10px] font-mono text-gray-500 mb-4">{formatForumDate(post.created_at)}</p>
               <div className="font-mono text-sm whitespace-pre-wrap break-words leading-6">{post.body}</div>
+              {post.attachments?.some(isImageAttachment) ? (
+                <div className="forum-inline-images">
+                  {post.attachments.filter(isImageAttachment).map((attachment) =>
+                    imageUrls[attachment.id] ? (
+                      <button
+                        type="button"
+                        className="forum-inline-image-button"
+                        key={attachment.id}
+                        onClick={() => download(attachment)}
+                        aria-label={`Download ${attachment.file_name}`}
+                      >
+                        {/* Signed storage URLs are already authorized and are intentionally rendered without image proxying. */}
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img className="forum-inline-image" src={imageUrls[attachment.id]} alt={attachment.file_name} loading="lazy" />
+                      </button>
+                    ) : null,
+                  )}
+                </div>
+              ) : null}
               {post.attachments?.length ? (
                 <div className="mt-6 space-y-2 border-t border-gray-200 pt-4">
                   <p className="forum-kicker">SECURE ATTACHMENTS</p>
