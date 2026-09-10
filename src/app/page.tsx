@@ -32,6 +32,7 @@ export default async function Home() {
           <h1 className="text-xl tracking-widest md:text-4xl">ILLPHATED.COM</h1>
         </Link>
         <nav className="hidden gap-8 text-sm tracking-widest md:flex nasalization" aria-label="Primary navigation">
+          <Link href="/shop" className="hover:text-nasa-red">SHOP</Link>
           <Link href="/stories" className="hover:text-nasa-red">STORIES</Link>
           <Link href="/archive" className="hover:text-nasa-red">ARCHIVES</Link>
           <Link href="/boards" className="hover:text-nasa-red">BOARDS</Link>
@@ -149,8 +150,9 @@ export default async function Home() {
             </div>
             <Link href="/admin/stories" className="text-[10px] font-mono text-gray-400 hover:text-nasa-blue">AUTHOR ACCESS</Link>
           </div>
-          <div className="grid gap-4 md:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {[
+              ["/shop", "SOFTWARE SHOP", "Get creator tools, automation, and Mac utilities."],
               ["/stories", "SHORT STORIES", "Read and listen to original transmissions."],
               ["/archive", "MISSION ARCHIVES", "Access the complete record."],
               ["/boards", "OPERATIONS BOARD", "Enter the real-time feed."],
