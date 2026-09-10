@@ -22,6 +22,16 @@ export default function RootLayout({
     <html lang="en" className={`${nasalization.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <a
+          href="https://ko-fi.com/D1D31E1CDH"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="kofi-support-button"
+          aria-label="Support Illphated on Ko-fi (opens in a new tab)"
+        >
+          <span className="kofi-support-icon" aria-hidden="true">♥</span>
+          <span>Support me on Ko-fi</span>
+        </a>
       </body>
     </html>
   );

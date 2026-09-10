@@ -42,6 +42,42 @@ button, a, input, textarea { transition: color .18s ease, background-color .18s 
 button { cursor: pointer; }
 button:disabled { cursor: wait; opacity: .6; }
 
+.kofi-support-button {
+  position: fixed;
+  z-index: 50;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 999px;
+  background: #72a4f2;
+  padding: 8px 18px 8px 9px;
+  color: #061021;
+  box-shadow: 0 10px 30px rgba(5,10,20,.28), 0 3px 0 rgba(0,51,160,.35);
+  font: 800 13px/1 var(--font-inter), sans-serif;
+  white-space: nowrap;
+}
+.kofi-support-button:hover {
+  background: white;
+  color: #0033a0;
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(5,10,20,.34), 0 4px 0 #ef3340;
+}
+.kofi-support-button:focus-visible { outline: 3px solid #ef3340; outline-offset: 3px; }
+.kofi-support-icon {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  place-items: center;
+  border-radius: 50%;
+  background: white;
+  color: #ef3340;
+  font-size: 15px;
+}
+
 .story-hero {
   position: relative;
   min-height: 680px;
@@ -159,6 +195,8 @@ button:disabled { cursor: wait; opacity: .6; }
 .forum-download:hover { border-color: #0033a0; background: #eef4ff; }
 
 @media (max-width: 720px) {
+  .kofi-support-button { right: 12px; bottom: 12px; min-height: 44px; padding: 6px 14px 6px 7px; font-size: 12px; }
+  .kofi-support-icon { width: 30px; height: 30px; }
   .story-hero { min-height: auto; align-items: flex-end; }
   .story-hero-image { width: 100%; opacity: .6; }
   .story-hero-overlay { background: linear-gradient(0deg, #050a14 15%, rgba(5,10,20,.25) 100%); }
